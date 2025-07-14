@@ -1,0 +1,589 @@
+/* Core Styles (mantidos) */
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #1d1d1f;
+    overflow-x: hidden;
+    background-color: #f5f5f7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    color: #1d1d1f;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+/* Apple-inspired Color Palette (mantidos) */
+.text-primary { color: #007aff !important; }
+.bg-primary { background-color: #007aff !important; }
+.btn-primary { 
+    background-color: #007aff; 
+    border-color: #007aff; 
+    color: #fff;
+    font-weight: 500; 
+    border-radius: 999px;
+    padding: 0.85rem 2.2rem;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    font-size: 1.1rem;
+}
+.btn-primary:hover { 
+    background-color: #005bb5; 
+    border-color: #005bb5; 
+    transform: translateY(-2px); 
+    box-shadow: 0 5px 15px rgba(0, 122, 255, 0.25);
+}
+
+.text-success { color: #34c759 !important; }
+.bg-success { background-color: #34c759 !important; }
+.btn-success { 
+    background-color: #34c759; 
+    border-color: #34c759; 
+    color: #fff;
+    font-weight: 500; 
+    border-radius: 999px; 
+    padding: 0.85rem 2.2rem; 
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94); 
+    font-size: 1.1rem;
+}
+.btn-success:hover { 
+    background-color: #2eb84e; 
+    border-color: #2eb84e; 
+    transform: translateY(-2px); 
+    box-shadow: 0 5px 15px rgba(52, 199, 89, 0.25); 
+}
+
+.bg-dark { background-color: #1a1a1d !important; }
+.text-white { color: #fff !important; }
+.bg-white { background-color: #fff !important; }
+.bg-light { background-color: #fcfcfc !important; }
+
+/* Cores sutis para ícones e backgrounds em cards (equivalente a -subtle do Bootstrap 5.3) */
+.bg-primary-subtle { background-color: rgba(0, 122, 255, 0.1) !important; }
+.text-primary-subtle { color: #007aff !important; }
+.bg-success-subtle { background-color: rgba(52, 199, 89, 0.1) !important; }
+.text-success-subtle { color: #34c759 !important; }
+.bg-warning-subtle { background-color: rgba(255, 159, 10, 0.1) !important; }
+.text-warning-subtle { color: #ff9f0a !important; }
+.bg-info-subtle { background-color: rgba(90, 200, 250, 0.1) !important; }
+.text-info-subtle { color: #5ac8fa !important; }
+.bg-danger-subtle { background-color: rgba(255, 59, 48, 0.1) !important; }
+.text-danger-subtle { color: #ff3b30 !important; }
+
+/* Ticker Text */
+.ticker-wrapper {
+    position: relative;
+    white-space: nowrap; /* Garante que o conteúdo fique em uma linha */
+    overflow: hidden; /* **CRUCIAL: Esconde o conteúdo que sai do container** */
+    box-shadow: none;
+    padding: 0.5rem 0;
+}
+.ticker-text-content {
+    display: inline-block; /* **CRUCIAL: Faz o elemento se comportar como um bloco, mas na linha** */
+    padding-left: 100%; /* Inicia o texto fora da tela, à direita */
+    will-change: transform; /* Otimização para animação */
+    font-weight: 500;
+    font-size: 0.95em;
+    letter-spacing: -0.2px;
+}
+.top-ticker {
+    background-color: #1a1a1d;
+    color: rgba(255,255,255,0.7);
+}
+.mid-ticker {
+    background-color: #2c2c2e;
+    color: rgba(255,255,255,0.7);
+}
+
+
+/* Navbar */
+.navbar {
+    border-bottom: 1px solid #e0e0e0;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 999; 
+}
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    color: #1d1d1f !important;
+    font-weight: 800;
+    letter-spacing: -0.8px;
+    font-size: 1.8rem !important;
+}
+.navbar-logo {
+    height: 35px;
+    width: auto;
+    object-fit: contain;
+    margin-right: 0.5rem;
+}
+@media (max-width: 575.98px) {
+    .navbar-brand .fw-bold.fs-4 {
+        display: none !important;
+    }
+    .navbar-logo {
+        height: 30px;
+        margin-right: 0;
+    }
+}
+.navbar-nav .nav-link {
+    color: #1d1d1f !important;
+    font-weight: 500;
+    padding: 0.7rem 1.2rem;
+    transition: color 0.3s ease;
+    border-radius: 8px;
+}
+.navbar-nav .nav-link:hover {
+    color: #007aff !important;
+    background-color: rgba(0, 122, 255, 0.05);
+}
+.btn-outline-light {
+    border-color: rgba(255, 255, 255, 0.4);
+    color: #fff;
+    font-weight: 500;
+    border-radius: 999px;
+    padding: 0.75rem 1.5rem;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.btn-outline-light:hover {
+    background-color: rgba(255,255,255,0.2);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Carrossel Principal */
+.hero-section {
+    height: 60vh; 
+    min-height: 400px; 
+    position: relative;
+    background-color: #000;
+}
+.carousel-item {
+    height: 60vh; 
+    min-height: 400px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.carousel-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 1;
+}
+.carousel-caption {
+    z-index: 2;
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 0 10%; 
+}
+.carousel-caption h1, .carousel-caption h2 {
+    color: #fff;
+    font-size: 3.2rem; 
+    font-weight: 900;
+    line-height: 1.1; 
+    margin-bottom: 0.8rem; 
+    letter-spacing: -0.5px;
+}
+.carousel-caption p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.35rem; 
+    font-weight: 300;
+    margin-bottom: 1.8rem;
+}
+@media (max-width: 1200px) {
+    .carousel-caption h1, .carousel-caption h2 {
+        font-size: 2.8rem;
+    }
+    .carousel-caption p {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 992px) {
+    .hero-section, .carousel-item {
+        height: 50vh;
+        min-height: 350px;
+    }
+    .carousel-caption h1, .carousel-caption h2 {
+        font-size: 2rem;
+    }
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+    .carousel-caption {
+        padding: 0 8%;
+    }
+}
+@media (max-width: 768px) {
+    .hero-section, .carousel-item {
+        height: 40vh;
+        min-height: 280px;
+    }
+    .carousel-caption h1, .carousel-caption h2 {
+        font-size: 1.4rem;
+    }
+    .carousel-caption p {
+        font-size: 0.75rem;
+        margin-bottom: 1rem;
+    }
+    .carousel-caption {
+        padding: 0 5%;
+    }
+    .btn-lg {
+        padding: 0.4rem 0.9rem;
+        font-size: 0.7rem;
+    }
+}
+.carousel-control-prev, .carousel-control-next {
+    width: 8%;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    opacity: 1;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-size: 100%;
+    filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.7));
+}
+
+/* --- Seção de Soluções (Cards Apple-Like com rolagem horizontal funcional) --- */
+.horizontal-scroll-section {
+    background-color: #f5f5f7; /* Fundo claro padrão da Apple para esta seção */
+    padding: 80px 0;
+    position: relative; 
+    overflow: hidden; /* Garante que nada vaze da seção e que o JS controle */
+}
+.horizontal-scroll-section h2 {
+    color: #1d1d1f; 
+    margin-bottom: 40px; 
+}
+
+/* Botões de Navegação Horizontal */
+.horizontal-nav-btn {
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.9); 
+    border: 1px solid rgba(0, 0, 0, 0.1); 
+    border-radius: 50%; 
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10; 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+.horizontal-nav-btn:hover {
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    transform: translateY(-50%) scale(1.05); 
+}
+.horizontal-nav-btn i {
+    color: #1d1d1f; 
+    font-size: 1.2em;
+}
+.horizontal-nav-btn-prev {
+    left: 20px; 
+}
+.horizontal-nav-btn-next {
+    right: 20px; 
+}
+
+/* Oculta botões em telas pequenas (mobile) */
+@media (max-width: 992px) {
+    .horizontal-nav-btn {
+        display: none;
+    }
+    .horizontal-scroll-container {
+        justify-content: flex-start; /* Alinha cards à esquerda, permitindo rolagem nativa */
+        overflow-x: scroll; /* **MUDANÇA CRUCIAL para mobile: Permite rolagem nativa via swipe** */
+    }
+}
+
+
+.horizontal-scroll-container {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centraliza os cards quando houver espaço */
+    align-items: flex-start; /* Alinha o topo dos cards */
+    padding: 0; /* Remove padding do container, o padding será no .scroll-content */
+    will-change: transform; /* Otimização para animação */
+    overflow-x: hidden; /* **MUDANÇA CRUCIAL para desktop: Oculta a barra de rolagem e permite que o JS controle 100%** */
+    -webkit-overflow-scrolling: touch; /* Suaviza rolagem em dispositivos de toque */
+    scrollbar-width: none; /* Esconde a barra de rolagem para Firefox */
+}
+.horizontal-scroll-container::-webkit-scrollbar {
+    display: none; /* Esconde a barra de rolagem para WebKit (Chrome, Safari) */
+}
+.scroll-content {
+    display: flex; 
+    flex-wrap: nowrap; /* **MUDANÇA CRUCIAL: Garante que os cards não quebrem linha** */
+    gap: 20px; /* Espaço entre os cards */
+    min-width: fit-content; /* Garante que o conteúdo ocupe a largura necessária para a rolagem */
+    box-sizing: border-box; /* Garante que padding não aumente o tamanho total */
+    
+    /* **AJUSTE CRÍTICO: Padding em scroll-content para garantir cards inteiros nas bordas** */
+    /* Aumentei para 40px para compensar o corte nas bordas */
+    padding: 0 40px; /* Padding no início e fim da rolagem para exibir o primeiro/último card por completo */
+    margin: 0; /* Remove margem, se houver */
+}
+
+/* Estilo do Card Principal Apple-Like */
+.card-apple-like {
+    flex: 0 0 auto; 
+    width: 300px; /* Largura fixa do card, como na referência */
+    height: 400px; /* Altura fixa para simular a proporção do iPhone/MacBook */
+    background-color: #fff; /* Fundo branco puro para os cards (padrão) */
+    border-radius: 18px; /* Cantos arredondados, como na Apple */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08); /* Sombra suave para profundidade */
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    overflow: hidden; /* Garante que a imagem e o texto fiquem dentro */
+    position: relative; /* Para posicionamento absoluto de elementos internos */
+    display: flex; /* Flexbox para controlar o layout interno */
+    flex-direction: column; /* Conteúdo em coluna */
+    justify-content: space-between; /* Distribui o espaço entre os elementos top/imagem/bottom */
+    padding: 20px; /* Padding interno sutil */
+    text-align: left; /* Alinhamento do texto padrão para o card */
+    border: none; /* Remove borda padrão do Bootstrap */
+    cursor: pointer; /* Indica que o card é clicável */
+}
+
+.card-apple-like:hover {
+    transform: translateY(-5px); /* Efeito de lift sutil no hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12); /* Sombra um pouco mais forte no hover */
+}
+
+/* Container interno para flexbox */
+.card-inner-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Garante que o conteúdo interno ocupe toda a altura */
+    padding: 0; /* Remove padding extra aqui, já tem no .card-apple-like */
+}
+
+/* Texto superior pequeno (ex: "As novidades") */
+.card-top-text {
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #888; /* Cor cinza sutil para o texto superior */
+    margin-bottom: 10px; /* Espaço abaixo */
+    text-align: left; /* Alinhamento à esquerda */
+    flex-shrink: 0; /* Impede que ele encolha */
+}
+
+/* Container da imagem do "produto" */
+.card-image-container {
+    flex-grow: 1; /* Permite que o container da imagem ocupe o espaço restante */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px; /* Espaço entre a imagem e o texto inferior */
+    min-height: 150px; /* Um mínimo para o container da imagem */
+}
+
+.card-product-image {
+    max-width: 100%; /* Garante que a imagem se ajuste ao card */
+    max-height: 100%; /* Garante que a imagem se ajuste ao card */
+    object-fit: contain; /* Ajusta a imagem dentro do container sem cortar */
+}
+
+/* Info de baixo (título e subtítulo/preço) */
+.card-bottom-info {
+    text-align: left; /* Alinhamento do texto inferior */
+    flex-shrink: 0; /* Impede que este bloco encolha se houver pouco espaço */
+}
+
+.card-apple-like .card-title {
+    font-size: 1.7rem; /* Tamanho do título principal, grande e impactante */
+    font-weight: 700; /* Negrito */
+    color: #1d1d1f; /* Cor escura do texto */
+    margin-bottom: 5px; /* Espaço entre título e subtítulo */
+    line-height: 1.2;
+    letter-spacing: -0.5px; /* Espaçamento de letras ajustado */
+    overflow: hidden; 
+    display: -webkit-box;
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+
+.card-apple-like .card-subtitle {
+    font-size: 1.05rem; /* Tamanho do subtítulo */
+    color: #4a4a4a; /* Cor cinza mais suave para o subtítulo */
+    font-weight: 400; /* Mais leve */
+    line-height: 1.3;
+    margin-bottom: 0; /* Remove margem inferior padrão */
+    overflow: hidden; 
+    display: -webkit-box;
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+
+/* Cores de Fundo Específicas para Cards (como iPhone preto ou MacBook azul) */
+.card-apple-like.bg-dark-product {
+    background-color: #000; /* Fundo preto para produtos escuros */
+    color: #fff; /* Texto branco padrão para este fundo */
+}
+.card-apple-like.bg-dark-product .card-title,
+.card-apple-like.bg-dark-product .card-subtitle,
+.card-apple-like.bg-dark-product .card-top-text {
+    color: #fff; /* Garante que todo o texto seja branco */
+}
+
+.card-apple-like.bg-light-product {
+    background-color: #f8f8fa; /* Fundo muito claro para produtos claros */
+    color: #1d1d1f; /* Texto escuro padrão para este fundo */
+}
+.card-apple-like.bg-light-product .card-title,
+.card-apple-like.bg-light-product .card-subtitle,
+.card-light-product .card-top-text {
+    color: #1d1d1f; /* Garante que todo o texto seja escuro */
+}
+
+
+/* --- Seções de Funcionalidades e Rodapé (mantidos) --- */
+.feature-section {
+    position: relative;
+    overflow: hidden;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll; 
+    padding: 100px 0;
+}
+@media (min-width: 992px) {
+    .feature-section {
+        background-attachment: fixed;
+    }
+}
+.feature-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.feature-section:nth-of-type(3)::before { /* Para a seção residencial */
+    background: rgba(255, 255, 255, 0.7); 
+}
+.feature-section .content-parallax {
+    position: relative;
+    z-index: 2;
+}
+.feature-section h2 {
+    font-size: 4.5rem;
+    font-weight: 800;
+    letter-spacing: -0.8px;
+}
+.feature-section:nth-of-type(3) h2, .feature-section:nth-of-type(3) p.lead {
+    color: #1d1d1f !important;
+}
+.feature-section p.lead {
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 3.5rem;
+}
+
+/* Service Lists (Detalhes dos Serviços) */
+.service-list {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #333;
+}
+.service-list li {
+    margin-bottom: 1.2rem;
+    display: flex;
+    align-items: flex-start;
+}
+.service-list li i {
+    font-size: 1.5em;
+    margin-top: 0.2em;
+}
+.service-list .text-info { color: #5ac8fa !important; }
+.service-list .text-danger { color: #ff3b30 !important; }
+.service-list .text-warning { color: #ff9f0a !important; }
+
+
+/* Footer */
+footer {
+    background-color: #1a1a1d;
+    font-size: 0.9em;
+    padding: 3rem 0;
+    color: #adadad;
+}
+footer p {
+    margin-bottom: 0.7rem;
+}
+footer a {
+    color: #adadad;
+    transition: color 0.3s ease;
+}
+footer a:hover {
+    color: #007aff !important;
+}
+.social-icon {
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+.social-icon:hover {
+    opacity: 1;
+}
+
+/* Ajustes para mobile */
+@media (max-width: 576px) {
+    .display-1 { font-size: 2rem !important; }
+    .display-3 { font-size: 1.6rem !important; }
+    .display-4 { font-size: 1.4rem !important; }
+    .display-5 { font-size: 1.2rem !important; }
+    .lead { font-size: 0.8rem !important; }
+    .btn-lg { font-size: 0.5rem !important; padding: 0.4rem 0.8rem !important; }
+
+    /* Ajustes para cards Apple-Like em mobile */
+    .card-apple-like {
+        width: 90vw; /* Ajusta a largura para mobile */
+        height: 350px; /* Ajusta a altura para mobile */
+        padding: 15px; /* Menos padding */
+        border-radius: 15px; /* Menos arredondado */
+    }
+    .horizontal-scroll-container .scroll-content {
+        gap: 15px; /* Menos gap */
+    }
+    .card-apple-like .card-title {
+        font-size: 1.5rem; /* Ajuste o tamanho da fonte */
+    }
+    .card-apple-like .card-subtitle {
+        font-size: 0.9em; /* Ajuste o tamanho da fonte */
+    }
+    .card-top-text {
+        font-size: 0.8em; /* Ajuste para mobile */
+    }
+
+    .service-list { font-size: 0.85rem; }
+    .service-list li { margin-bottom: 0.5rem; }
+    .service-list li i { font-size: 1.2em; margin-top: 0.1em; }
+}
