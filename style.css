@@ -216,7 +216,7 @@ section {
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
-    height: 90vh; /* Altura padrão para telas maiores */
+    height: 99vh; /* Altura padrão para telas maiores */
     min-height: 500px; /* Altura mínima para não ficar muito pequeno */
     max-height: 900px; /* Altura máxima para telas gigantes */
     overflow: hidden;
