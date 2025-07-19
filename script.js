@@ -1,126 +1,70 @@
-// Garante que o GSAP e o plugin ScrollTrigger estejam registrados
-gsap.registerPlugin(ScrollTrigger);
+document.addEventListener('DOMContentLoaded', function() {
+    // Inicializa todos os carrosséis do Bootstrap
+    var carousels = document.querySelectorAll('.carousel');
+    carousels.forEach(function(carousel) {
+        new bootstrap.Carousel(carousel);
+    });
 
-document.addEventListener("DOMContentLoaded", function() {
+    // Adiciona smooth scroll para os links da navbar
+    document.querySelectorAll('a.nav-link').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
 
-    // --- Função de Utilitário para Configurar o Ticker Text ---
-    const setupSeamlessTicker = (wrapperId, direction, duration) => {
-        const wrapper = document.getElementById(wrapperId);
-        const span = wrapper ? wrapper.querySelector('span') : null;
+            const targetId = this.getAttribute('href');
+            // Verifica se o href é um ID de seção (começa com #)
+            if (targetId.startsWith('#')) {
+                const targetElement = document.querySelector(targetId);
+                const navbarHeight = document.querySelector('.navbar').offsetHeight;
 
-        if (!span) {
-            console.warn(`Ticker span not found for wrapper ID: ${wrapperId}`);
-            return;
-        }
+                if (targetElement) {
+                    // Calcula a posição de rolagem, subtraindo a altura da navbar
+                    // Adicionamos um pequeno offset extra para melhor visualização do topo da seção
+                    const offsetTop = targetElement.offsetTop - navbarHeight - 10; // Ajuste de 10px
 
-        const originalContent = span.innerHTML;
-        span.innerHTML = originalContent + originalContent; 
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
 
-        let contentWidth;
-
-        const startTickerAnimation = () => {
-            contentWidth = span.getBoundingClientRect().width / 2;
-
-            if (contentWidth > 0) {
-                gsap.to(span, {
-                    x: direction === 'left' ? -contentWidth : contentWidth,
-                    ease: "none",
-                    duration: duration,
-                    repeat: -1,
-                    modifiers: {
-                        x: x => parseFloat(x) % contentWidth
+                    // Fecha o navbar collapsível em telas pequenas após o clique
+                    const navbarCollapse = document.getElementById('navbarNav');
+                    // Verifica se a navbar está visível (aberta) em telas pequenas
+                    if (navbarCollapse && window.getComputedStyle(navbarCollapse).display !== 'none' && navbarCollapse.classList.contains('show')) {
+                        var bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
+                        bsCollapse.hide();
                     }
-                });
+                }
             } else {
-                setTimeout(startTickerAnimation, 50); 
-            }
-        };
-
-        setTimeout(startTickerAnimation, 100); 
-    };
-
-    // --- Chamadas para as Animações dos Tickers ---
-    setupSeamlessTicker('topTicker', 'left', 35);
-    setupSeamlessTicker('midTicker', 'right', 40);
-
-
-    // --- Inicialização do Carrossel Bootstrap & Animações das Legendas (GSAP) ---
-    const heroCarouselElement = document.getElementById('heroCarousel');
-    if (heroCarouselElement) {
-        const heroCarousel = new bootstrap.Carousel(heroCarouselElement, {
-            interval: 6000,
-            pause: "hover"
-        });
-
-        const animateCaption = (captionElement) => {
-            const children = captionElement.querySelectorAll('h1, h2, p, a.btn');
-            gsap.fromTo(children,
-                { opacity: 0, y: 40 },
-                { opacity: 1, y: 0, duration: 1.2, ease: 'power3.out', stagger: 0.15 }
-            );
-        };
-
-        const initialCaption = heroCarouselElement.querySelector('.carousel-item.active .carousel-caption');
-        if (initialCaption) {
-            animateCaption(initialCaption);
-        }
-
-        heroCarouselElement.addEventListener('slid.bs.carousel', function (event) {
-            const currentCaption = event.relatedTarget.querySelector('.carousel-caption');
-            animateCaption(currentCaption);
-        });
-    }
-
-    // --- Seção de Rolagem Horizontal (GSAP ScrollTrigger e Navegação) ---
-    // REMOVIDA TODA A LÓGICA DE ROLAGEM HORIZONTAL DO GSAP E BOTÕES DE NAVEGAÇÃO.
-    // A rolagem será controlada puramente pelo CSS via `overflow-x: scroll;`
-    // e os cards se ajustarão.
-    // Os botões de navegação no HTML devem ter `display: none;` no CSS.
-    // A navegação por teclado para esta seção também não é mais necessária.
-
-    // --- Parallax Effect em Imagens (GSAP ScrollTrigger) ---
-    document.querySelectorAll("[data-gsap-parallax]").forEach(img => {
-        gsap.to(img, {
-            y: () => {
-                return window.innerWidth > 991 ? parseFloat(img.dataset.gsapParallax) * 200 : 0;
-            },
-            ease: "none",
-            scrollTrigger: {
-                trigger: img,
-                start: "top bottom",
-                end: "bottom top",
-                scrub: true
+                // Se não for um ID de seção, permite o comportamento padrão (ex: link para WhatsApp)
+                window.location.href = targetId;
             }
         });
     });
 
-    // --- Animações Gerais de Fade-In e Deslize para Cima ---
-    gsap.utils.toArray('.feature-section h2, .feature-section p.lead, .service-list li, .card-apple-like, .btn-lg.rounded-pill').forEach(element => {
-        gsap.from(element, {
-            opacity: 0,
-            y: 40,
-            duration: 1.2,
-            ease: 'power3.out',
-            scrollTrigger: {
-                trigger: element,
-                start: 'top 85%',
-                toggleActions: 'play none none none',
+    // Adiciona classes ativas à navegação ao rolar
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
+    const navbarHeight = document.querySelector('.navbar').offsetHeight; // Obtém a altura da navbar uma vez
+
+    window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            // Ajusta o ponto de ativação levando em conta a altura da navbar e um offset
+            if (pageYOffset >= sectionTop - navbarHeight - 60) { // Ajuste de 60px para melhor detecção
+                current = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            // Certifica-se de que estamos comparando com IDs de seção
+            // Adiciona a verificação para links que não são âncoras (ex: "#")
+            if (link.getAttribute('href') && link.getAttribute('href').startsWith('#') && link.getAttribute('href').includes(current)) {
+                link.classList.add('active');
+            } else if (current === 'home' && link.getAttribute('href') === '#home') {
+                link.classList.add('active'); // Garante que "Início" fique ativo no topo
             }
         });
     });
-
-    // --- Animação Opcional: Fade-In dos Ícones Sociais no Rodapé ---
-    gsap.from(".social-icon", {
-        opacity: 0,
-        y: 20,
-        duration: 0.8,
-        stagger: 0.1,
-        ease: "power2.out",
-        scrollTrigger: {
-            trigger: "footer",
-            start: "top 85%",
-            toggleActions: "play none none none"
-        }
-    });
-
 });
