@@ -1,225 +1,443 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MULTITECH - Soluções Inovadoras para Casa e Empresa em Aracaju-SE</title>
-    <meta name="description" content="Multitech T.I. em Aracaju-SE: Especialistas em manutenção, redes e otimização para computadores, notebooks e infraestrutura completa. Descubra a tecnologia sem preocupações.">
-    <meta name="keywords" content="manutenção de computadores Aracaju, T.I. Aracaju, redes de computadores Aracaju, suporte técnico Aracaju, assistência técnica Aracaju, conserto de PC Aracaju, Wi-Fi Aracaju, Multitech T.I., Multitech Aracaju, tecnologia Aracaju, serviços de TI">
-      <link rel="icon" href="https://raw.githubusercontent.com/Markkito-ferreira/multitech/refs/heads/main/MULTITECH.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NY0XV7V30E">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <title>MULTITECH FIELD - Soluções de TI Especializadas em Aracaju</title>
+    <meta name="description" content="A MULTITECH FIELD oferece manutenção de PCs, notebooks, configuração de redes e soluções de TI completas para residências e empresas em Aracaju. Agende sua visita técnica via WhatsApp!">
+    <meta name="keywords" content="TI Aracaju, Manutenção de computadores Aracaju, Redes Aracaju, Suporte técnico Aracaju, Notebook Aracaju, PC Aracaju, Serviços de informática Aracaju, Soluções de TI, Contrato de TI empresas, Visita técnica residencial, Assistência técnica">
+    <meta name="author" content="MULTITECH FIELD">
 
-  gtag('config', 'G-NY0XV7V30E');
-</script>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Ajustes finos de espaçamento global */
+        body {
+            padding-top: 72px; /* Espaçamento para navbar fixa */
+            letter-spacing: 0.01em;
+        }
+        main section {
+            margin-bottom: 2.5rem; /* Espaçamento entre seções */
+        }
+        .carousel-section {
+            min-height: 70vh;
+            padding-top: 2.5rem;
+            padding-bottom: 2.5rem;
+        }
+        .carousel-inner .carousel-item .p-4 {
+            padding: 2.5rem 2rem !important; /* Padding ajustado no conteúdo do carrossel */
+        }
+        .carousel-indicators {
+            bottom: 1.5rem;
+        }
+        .carousel-control-prev, .carousel-control-next {
+            width: 4rem;
+        }
+        /* Cards de serviços */
+        .apple-card {
+            margin-bottom: 1.5rem;
+            border-radius: 1.25rem;
+            box-shadow: 0 2px 16px rgb(255, 255, 255);
+        }
+        .apple-card .card-body {
+            padding: 2.25rem 1.5rem;
+        }
+        /* Seções principais */
+        #servicos .container {
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+        }
+        #residencia .container, #empresas .container, #sobre .container, #contato .container {
+            padding-top: 2.5rem;
+            padding-bottom: 2.5rem;
+        }
+        #residencia .img-fluid, #empresas .img-fluid, #sobre .img-fluid {
+            margin-bottom: 1.5rem;
+        }
+        /* Listas de benefícios */
+        ul.list-unstyled.text-muted {
+            margin-bottom: 2rem !important;
+        }
+        ul.list-unstyled.text-muted li {
+            color: white;
+            margin-bottom: 0.75rem;
+        }
+        /* Cards de preço WhatsApp */
+        .whatsapp-price-card {
+            border-radius: 1.25rem;
+            box-shadow: 0 2px 16px rgba(22, 9, 204, 0.644);
+            margin-bottom: 1.5rem;
+        }
+        .whatsapp-price-card .card-body {
+            padding: 2.5rem 1.5rem;
+        }
+        /* Footer refinado */
+        footer {
+            padding-top: 2.5rem;
+            padding-bottom: 2.5rem;
+            background: #181c20;
+        }
+        footer .container {
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        }
+        footer .navbar-brand img {
+            margin-right: 0.5rem;
+        }
+        footer .navbar-brand span {
+            font-size: 1.1rem;
+        }
+        footer h5 {
+            margin-bottom: 1.25rem !important;
+        }
+        footer ul.list-unstyled {
+            margin-bottom: 0.5rem;
+        }
+        footer ul.list-unstyled li {
+            margin-bottom: 0.4rem;
+        }
+        footer .premium-social-icon {
+            padding: 0.35rem 0.5rem;
+            border-radius: 50%;
+            transition: background 0.2s;
+        }
+        footer .premium-social-icon:hover {
+            background: #23272b;
+        }
+        footer .small {
+            margin-top: 0.5rem;
+        }
+        /* Ajuste para responsividade extra */
+        @media (max-width: 991.98px) {
+            .carousel-section {
+                padding-top: 1.5rem;
+                padding-bottom: 1.5rem;
+            }
+            #servicos .container, #residencia .container, #empresas .container, #sobre .container, #contato .container {
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+            }
+        }
+        @media (max-width: 575.98px) {
+            .carousel-inner .carousel-item .p-4 {
+                padding: 1.25rem 0.5rem !important;
+            }
+            .apple-card .card-body, .whatsapp-price-card .card-body {
+                padding: 1.25rem 0.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="https://raw.githubusercontent.com/Markkito-ferreira/multitech/refs/heads/main/MULTITECH.png" alt="Logo Multitech" class="navbar-logo me-2"> 
-                <span class="fw-bold fs-4 d-none d-sm-block">MULTITECH</span> 
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#solucoes">Soluções</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#residencial">Para Casa</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#empresarial">Para Empresa</a></li>
-                    <li class="nav-item ms-lg-3">
-                        <a class="btn btn-primary d-flex align-items-center" href="https://wa.me/5561996556538" target="_blank">
-                            <i class="fab fa-whatsapp me-2"></i> Fale Conosco
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <header class="hero-section">
-        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
-            <div class="carousel-inner">
-                <div class="carousel-item active" style="background-image: url('hero-multitech-3.jpg');">
-                    <div class="carousel-caption d-block">
-                        <h1 class="display-1 fw-bolder">Tecnologia ao Seu Alcance.</h1>
-                        <p class="lead fw-light">A Multitech transforma sua experiência digital em Aracaju.</p>
-                        <div class="d-flex justify-content-center gap-3 mt-4">
-                            <a href="#solucoes" class="btn btn-light btn-lg rounded-pill px-4 py-2">Descobrir Soluções <i class="fas fa-chevron-right ms-2"></i></a>
-                            <a href="https://wa.me/5561996556538" target="_blank" class="btn btn-outline-light btn-lg rounded-pill px-4 py-2">Falar com Especialista</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item" style="background-image: url('hero-multitech-1.png');">
-                    <div class="carousel-caption d-block">
-                        <h2 class="display-1 fw-bolder">Sua Casa, Sempre Conectada.</h2>
-                        <p class="lead fw-light">Desempenho e tranquilidade para sua tecnologia doméstica.</p>
-                        <a href="#residencial" class="btn btn-light btn-lg rounded-pill px-4 py-2 mt-4">Ver Soluções para Casa <i class="fas fa-chevron-right ms-2"></i></a>
-                    </div>
-                </div>
-                <div class="carousel-item" style="background-image: url('hero-multitech-2.webp');">
-                    <div class="carousel-caption d-block">
-                        <h2 class="display-1 fw-bolder">Negócios Impulsionados pela T.I.</h2>
-                        <p class="lead fw-light">Infraestrutura sólida e suporte estratégico para sua empresa em Aracaju.</p>
-                        <a href="#empresarial" class="btn btn-light btn-lg rounded-pill px-4 py-2 mt-4">Explore Soluções Corporativas <i class="fas fa-chevron-right ms-2"></i></a>
-                    </div>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top shadow-none" style="backdrop-filter: blur(16px); background:rgba(28,28,30,0.85)!important; border-bottom:1px solid rgba(255,255,255,0.04);">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#home" aria-label="Página inicial MULTITECH FIELD">
+                    <img src="img/MULTITECH.png" alt="Logotipo MULTITECH FIELD" height="32" style="border-radius:8px; box-shadow:none;">
+                    <span class="ms-2" style="font-weight:600; letter-spacing:-0.01em;">MULTITECH FIELD</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto text-center">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#home">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#residencia">Para Residências</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#empresas">Para Empresas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre Nós</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                    </ul>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Próximo</span>
-            </button>
-        </div>
+        </nav>
     </header>
 
-    <section id="solucoes" class="py-5 horizontal-scroll-section position-relative"> 
-        <div class="container-fluid">
-            <h2 class="display-4 fw-bold text-center mb-5">As Soluções da Multitech. Veja o que temos para você.</h2>
-            <div class="horizontal-scroll-container">
-                <div class="scroll-content d-flex flex-nowrap">
-                 
-                    <div class="card card-apple-like bg-light-product flex-shrink-0">
-                        <div class="card-inner-content">
-                            <div class="card-top-text">Proteção</div>
-                            <div class="card-image-container">
-                                <img src="card-agilidade.png" alt="Segurança Prioritária" class="img-fluid card-product-image">
+    <main>
+        <section id="home" class="carousel-section d-flex align-items-center justify-content-center" aria-label="Destaques e Soluções da MULTITECH FIELD">
+            <div id="heroCarousel" class="carousel slide carousel-fade w-100 h-100" data-bs-ride="carousel" data-bs-interval="5000">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner h-100">
+                    <div class="carousel-item active hero-slide-1 h-100">
+                        <div class="carousel-content-split w-100 h-100">
+                            <div class="carousel-content-text">
+                                <h1 class="display-3 fw-bold animate__animated animate__fadeInDown animate__delay-0-5s">Tecnologia Sem Complicações</h1>
+                                <p class="lead mt-3 animate__animated animate__fadeInUp animate__delay-1s">Seu <strong>PC</strong> e <strong>Notebook</strong> sempre perfeitos! Manutenção, otimização e suporte rápido para o seu dia a dia.</p>
+                                <a href="https://wa.me/5561996556538?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20visita%20t%C3%A9cnica%20para%20resid%C3%AAncia%20(PC%2FNotebook)." target="_blank" class="btn btn-success btn-lg mt-4 animate__animated animate__zoomIn animate__delay-1-5s"><i class="bi bi-whatsapp me-2"></i>Agende Sua Manutenção Residencial</a>
                             </div>
-                            <div class="card-bottom-info">
-                                <h3 class="card-title fw-bold">Segurança de Dados</h3>
-                                <p class="card-subtitle">Sua informação protegida.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card card-apple-like bg-dark-product flex-shrink-0">
-                        <div class="card-inner-content">
-                            <div class="card-top-text">Suporte</div>
-                            <div class="card-image-container">
-                                <img src="card-especialistas.png" alt="Agilidade no Atendimento" class="img-fluid card-product-image">
-                            </div>
-                            <div class="card-bottom-info">
-                                <h3 class="card-title fw-bold">Agilidade e Resposta</h3>
-                                <p class="card-subtitle">Minimizando seu tempo parado.</p>
+                            <div class="carousel-content-image">
+                                <img src="img/hero-multitech-1.png" alt="Técnico de informática consertando um notebook, representando manutenção de PCs e notebooks." class="img-fluid">
                             </div>
                         </div>
                     </div>
-                    <div class="card card-apple-like bg-light-product flex-shrink-0">
-                        <div class="card-inner-content">
-                            <div class="card-top-text">Parceria</div>
-                            <div class="card-image-container">
-                                <img src="card-parceria.png" alt="Parceria e Confiança" class="img-fluid card-product-image">
+                    <div class="carousel-item hero-slide-2 h-100">
+                        <div class="carousel-content-split w-100 h-100">
+                            <div class="carousel-content-text">
+                                <h1 class="display-3 fw-bold animate__animated animate__fadeInDown animate__delay-0-5s">Conectividade de Alta Performance</h1>
+                                <p class="lead mt-3 animate__animated animate__fadeInUp animate__delay-1s"><strong>Redes</strong> que funcionam de verdade. Instalação, configuração e otimização de Wi-Fi e cabeamento para sua casa ou empresa.</p>
+                                <a href="https://wa.me/5561996556538?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20visita%20t%C3%A9cnica%20para%20configura%C3%A7%C3%A3o%20de%20redes." target="_blank" class="btn btn-success btn-lg mt-4 animate__animated animate__zoomIn animate__delay-1-5s"><i class="bi bi-whatsapp me-2"></i>Agende Sua Configuração de Rede</a>
                             </div>
-                            <div class="card-bottom-info">
-                                <h3 class="card-title fw-bold">Relacionamento Duradouro</h3>
-                                <p class="card-subtitle">Transparência e excelência.</p>
+                            <div class="carousel-content-image">
+                                <img src="img/hero-multitech-3.jpg" alt="Conexões de rede e roteador, simbolizando Wi-Fi e redes cabeadas de alta velocidade." class="img-fluid">
                             </div>
                         </div>
                     </div>
-                    <div class="card card-apple-like bg-dark-product flex-shrink-0">
-                        <div class="card-inner-content">
-                            <div class="card-top-text">Local</div>
-                            <div class="card-image-container">
-                                <img src="card-local.jpg" alt="Atendimento Local em Aracaju" class="img-fluid card-product-image">
+                    <div class="carousel-item hero-slide-3 h-100">
+                        <div class="carousel-content-split w-100 h-100">
+                            <div class="carousel-content-text">
+                                <h1 class="display-3 fw-bold animate__animated animate__fadeInDown animate__delay-0-5s">Sua Empresa no Futuro</h1>
+                                <p class="lead mt-3 animate__animated animate__fadeInUp animate__delay-1s"><strong>Soluções de TI</strong> para impulsionar o seu negócio. Suporte, infraestrutura e consultoria especializada para empresas.</p>
+                                <a href="https://wa.me/5561996556538?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%C2%A0uma%20visita%20t%C3%A9cnica%20para%20minha%20empresa%20(R%24%2090%2C00)." target="_blank" class="btn btn-success btn-lg mt-4 animate__animated animate__zoomIn animate__delay-1-5s"><i class="bi bi-whatsapp me-2"></i>Agende Sua Consultoria Empresarial</a>
                             </div>
-                            <div class="card-bottom-info">
-                                <h3 class="card-title fw-bold">Atendimento em Aracaju</h3>
-                                <p class="card-subtitle">Suporte rápido na sua região.</p>
+                            <div class="carousel-content-image">
+                                <img src="img/hero-multitech-2.webp" alt="Ambiente de escritório moderno com pessoas trabalhando em TI, representando soluções empresariais." class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Slide anterior">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Próximo slide">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </section>
+
+        <section id="servicos" class="py-5" aria-labelledby="servicos-heading">
+            <div class="container text-center">
+                <h2 id="servicos-heading" class="mb-5 display-4 fw-bold">Nossos Serviços Essenciais</h2>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100 apple-card border-0 shadow-none bg-transparent">
+                            <div class="card-body p-4">
+                                <i class="bi bi-laptop display-4 mb-3" style="color:#fff;"></i>
+                                <h3 class="card-title fw-semibold" style="color:#fff;">Manutenção de Computadores e Notebooks</h3>
+                                <p class="card-text" style="color:#e0e0e0;">Diagnóstico, otimização de desempenho, remoção de vírus e reparos em seu PC ou notebook. Deixamos seu equipamento como novo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 apple-card border-0 shadow-none bg-transparent">
+                            <div class="card-body p-4">
+                                <i class="bi bi-diagram-3 display-4 mb-3" style="color:#fff;"></i>
+                                <h3 class="card-title fw-semibold" style="color:#fff;">Configuração e Otimização de Redes</h3>
+                                <p class="card-text" style="color:#e0e0e0;">Desenvolvemos e instalamos infraestruturas de rede seguras e de alta velocidade, tanto cabeadas quanto Wi-Fi, para sua casa ou escritório.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 apple-card border-0 shadow-none bg-transparent">
+                            <div class="card-body p-4">
+                                <i class="bi bi-shield-lock display-4 mb-3" style="color:#fff;"></i>
+                                <h3 class="card-title fw-semibold" style="color:#fff;">Segurança e Recuperação de Dados</h3>
+                                <p class="card-text" style="color:#e0e0e0;">Proteja seus dados com nossas soluções de segurança e conte com nossa expertise em recuperação para qualquer imprevisto.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <button class="horizontal-nav-btn horizontal-nav-btn-prev" id="horizontalPrev"><i class="fas fa-chevron-left"></i></button>
-        <button class="horizontal-nav-btn horizontal-nav-btn-next" id="horizontalNext"><i class="fas fa-chevron-right"></i></button>
-    </section>
+        </section>
 
-    <section id="residencial" class="feature-section text-center py-5 parallax-section" style="background-image: url('bg-residential.webp');">
-        <div class="container py-5 content-parallax">
-            <h2 class="display-3 fw-bold text-white mb-4">Tecnologia sem Complicações.</h2>
-            <p class="lead fw-light text-white mb-5 col-lg-8 mx-auto">Deixe a Multitech cuidar da sua tecnologia doméstica em Aracaju. Performance, segurança e tranquilidade para você aproveitar ao máximo seu dia a dia digital.</p>
-            <a href="https://wa.me/5561996556538?text=Ol%C3%A1%2C%20Multitech!%20Gostaria%20de%20solu%C3%A7%C3%B5es%20de%20T.I.%20para%20minha%20resid%C3%AAncia%20em%20Aracaju." target="_blank" class="btn btn-primary btn-lg rounded-pill px-5 py-3 shadow-lg">Descobrir Soluções para Casa <i class="fas fa-arrow-right ms-2"></i></a>
-        </div>
-    </section>
+        <section id="residencia" class="py-5 bg-light" aria-labelledby="residencia-heading">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-6 mb-5 mb-lg-0 order-lg-1">
+                        <img src="img/bg-residential.png" class="img-fluid rounded shadow-lg" alt="Pessoa utilizando computador em ambiente doméstico, representando serviços de TI para residências.">
+                    </div>
+                    <div class="col-lg-6 px-4 px-lg-5 text-center text-lg-start order-lg-0">
+                        <h2 id="residencia-heading" class="display-5 fw-bold mb-4">Seu Lar, Totalmente Conectado e Protegido.</h2>
+                        <p class="lead mb-4">A tecnologia na sua casa merece o melhor. Oferecemos soluções completas para que você e sua família desfrutem de um ambiente digital sem preocupações.</p>
+                        <p class="fs-3 fw-bold text-success mb-4">Visita Técnica Residencial a partir de: R$ 70,00</p>
+                        <ul class="list-unstyled text-muted mb-4 text-start mx-auto mx-lg-0" style="max-width: 400px;">
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i><strong>Manutenção completa de PCs e Notebooks</strong></li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i><strong>Instalação e otimização de softwares</strong></li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i><strong>Configuração e melhoria de redes Wi-Fi</strong></li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Otimização de Redes para Jogos e Streaming</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Recuperação de Dados Essenciais</li>
+                        </ul>
+                        <a href="https://wa.me/5561996556538?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20visita%20t%C3%A9cnica%20para%20resid%C3%AAncia%20(R%24%2070%2C00)." target="_blank" class="btn btn-success btn-lg mt-3"><i class="bi bi-whatsapp me-2"></i>Agendar Visita Residencial</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="empresarial" class="feature-section text-center py-5 parallax-section" style="background-image: url('bg-corporate.png');">
-        <div class="container py-5 content-parallax">
-            <h2 class="display-3 fw-bold text-white mb-4">Impulsione seu Negócio.</h2>
-            <p class="lead fw-light text-white mb-5 col-lg-8 mx-auto">A Multitech otimiza sua infraestrutura, garante a segurança de dados e oferece suporte estratégico para o crescimento contínuo da sua empresa em Aracaju.</p>
-            <a href="https://wa.me/5561996556538?text=Ol%C3%A1%2C%20Multitech!%20Preciso%20de%20solu%C3%A7%C3%B5es%20de%20T.I.%20para%20minha%20empresa%20em%20Aracaju." target="_blank" class="btn btn-light btn-lg rounded-pill px-5 py-3 shadow-lg">Soluções para Empresas <i class="fas fa-arrow-right ms-2"></i></a>
-        </div>
-    </section>
+        <section id="empresas" class="py-5" aria-labelledby="empresas-heading">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <img src="img/bg-corporate.png" class="img-fluid rounded shadow-lg" alt="Equipe de trabalho em um escritório moderno com tecnologia, representando soluções de TI para empresas.">
+                    </div>
+                    <div class="col-lg-6 px-4 px-lg-5 text-center text-lg-start">
+                        <h2 id="empresas-heading" class="display-5 fw-bold mb-4">Tecnologia que Impulsiona Seu Negócio.</h2>
+                        <p class="lead mb-4">Soluções de TI estratégicas para garantir a eficiência, segurança e crescimento da sua empresa. Foco total na sua produtividade.</p>
+                        <p class="fs-3 fw-bold text-success mb-4">Visita Técnica Empresarial a partir de: R$ 90,00</p>
+                        <ul class="list-unstyled text-muted mb-4 text-start mx-auto mx-lg-0" style="max-width: 400px;">
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i><strong>Contratos de Manutenção Proativa de TI</strong></li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Implantação e Gerenciamento de Servidores</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Consultoria em Segurança da Informação Avançada</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Instalação e Configuração de Redes Corporativas</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Suporte Remoto e Presencial</li>
+                        </ul>
+                        <a href="https://wa.me/5561996556538?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%C2%A0uma%20visita%20t%C3%A9cnica%20para%20minha%20empresa%20(R%24%2090%2C00)." target="_blank" class="btn btn-success btn-lg mt-3"><i class="bi bi-whatsapp me-2"></i>Agendar Visita Empresarial</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section class="py-5 bg-white">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6">
-                    <h3 class="display-5 fw-bold text-primary mb-4">Serviços Residenciais</h3>
-                    <p class="lead mb-4">Traga seus problemas de tecnologia para a Multitech e desfrute de um ambiente digital sem interrupções. Nossa equipe em Aracaju-SE está pronta para te ajudar.</p>
-                    <ul class="list-unstyled service-list">
-                        <li><i class="fas fa-desktop text-info me-3"></i> Otimização e Manutenção de Desktops e Notebooks</li>
-                        <li><i class="fas fa-bug text-danger me-3"></i> Remoção Completa de Vírus, Malware e Spyware</li>
-                        <li><i class="fas fa-wifi text-success me-3"></i> Configuração e Otimização de Redes Wi-Fi e Cabeadas</li>
-                        <li><i class="fas fa-hdd text-warning me-3"></i> Recuperação de Dados e Soluções de Backup Doméstico</li>
-                        <li><i class="fas fa-headset text-primary me-3"></i> Suporte Técnico Personalizado e Instalação de Softwares</li>
+        <section id="sobre" class="py-5 bg-light" aria-labelledby="sobre-heading">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-6 mb-5 mb-lg-0 order-lg-1">
+                        <img src="img/card-especialistas.png" class="img-fluid rounded-4" style="box-shadow:none;" alt="Equipe de especialistas da MULTITECH FIELD em reunião, simbolizando expertise e profissionalismo.">
+                    </div>
+                    <div class="col-lg-6 px-4 px-lg-5 text-center text-lg-start order-lg-0">
+                        <h2 id="sobre-heading" class="display-5 fw-bold mb-4" style="color:#fff;">Tecnologia descomplicada para você e sua empresa</h2>
+                        <p class="lead mb-4" style="color:#fff;"><strong>MULTITECH FIELD</strong> é especialista em soluções de TI eficientes, atendimento ágil e suporte completo para residências e empresas. Nossa missão é simplificar a tecnologia e garantir sua tranquilidade.</p>
+                        <p class="text-muted" style="color:#e0e0e0;">Atendemos toda Aracaju e região. Profissionais qualificados, apaixonados por inovação e prontos para resolver qualquer desafio tecnológico, sempre com foco total na sua satisfação.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="por-que" class="py-5 text-center" aria-labelledby="por-que-heading">
+            <div class="container">
+                <h2 id="por-que-heading" class="display-4 fw-bold mb-5" style="color:#fff;">Por Que Somos a Escolha Certa?</h2>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 g-4">
+                    <div class="col">
+                        <div class="p-4 h-100 apple-feature-box bg-transparent border-0 shadow-none">
+                            <i class="bi bi-person-workspace display-5 mb-3" style="color:#fff;"></i>
+                            <h5 class="fw-semibold" style="color:#fff;">Profissionalismo</h5>
+                            <p class="small" style="color:#e0e0e0;">Equipe qualificada e experiente em todas as frentes de TI.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="p-4 h-100 apple-feature-box bg-transparent border-0 shadow-none">
+                            <i class="bi bi-speedometer2 display-5 mb-3" style="color:#fff;"></i>
+                            <h5 class="fw-semibold" style="color:#fff;">Agilidade</h5>
+                            <p class="small" style="color:#e0e0e0;">Atendimento rápido e eficiente para que você não perca tempo.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="p-4 h-100 apple-feature-box bg-transparent border-0 shadow-none">
+                            <i class="bi bi-award display-5 mb-3" style="color:#fff;"></i>
+                            <h5 class="fw-semibold" style="color:#fff;">Qualidade</h5>
+                            <p class="small" style="color:#e0e0e0;">Serviços com a máxima qualidade e garantia de satisfação total.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="p-4 h-100 apple-feature-box bg-transparent border-0 shadow-none">
+                            <i class="bi bi-search display-5 mb-3" style="color:#fff;"></i>
+                            <h5 class="fw-semibold" style="color:#fff;">Transparência</h5>
+                            <p class="small" style="color:#e0e0e0;">Orçamentos claros e detalhados, sem surpresas ou letras miúdas.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="p-4 h-100 apple-feature-box bg-transparent border-0 shadow-none">
+                            <i class="bi bi-hand-thumbs-up display-5 mb-3" style="color:#fff;"></i>
+                            <h5 class="fw-semibold" style="color:#fff;">Foco no Cliente</h5>
+                            <p class="small" style="color:#e0e0e0;">Soluções personalizadas para atender exatamente às suas necessidades.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="py-5" aria-labelledby="contato-heading">
+            <div class="container text-center">
+                <h2 id="contato-heading" class="display-4 fw-bold mb-4">Agende Sua Visita Técnica Via WhatsApp!</h2>
+                <p class="lead mb-5">Para um atendimento rápido e eficiente, agende sua visita técnica diretamente pelo WhatsApp. Nossa equipe está pronta para atendê-lo em <strong>Aracaju e região</strong>!</p>
+
+                <div class="row justify-content-center mb-5 gx-4">
+                    <div class="col-md-6 col-lg-5 mb-4 mb-lg-0">
+                        <div class="card h-100 whatsapp-price-card">
+                            <div class="card-body p-4 p-lg-5">
+                                <h3 class="card-title fw-bold mb-3">Para Residências</h3>
+                                <p class="card-text fs-5 text-muted">Seu PC, notebook ou rede em casa precisa de atenção?</p>
+                                <p class="fs-1 fw-bold text-success mb-3">R$ 70,00</p>
+                                <small class="text-muted d-block mb-3">(Valor da Visita Técnica. Serviços adicionais cobrados à parte.)</small>
+                                <a href="https://wa.me/5561996556538?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20visita%20t%C3%A9cnica%20para%20resid%C3%AAncia%20(R%24%2070%2C00)." target="_blank" class="btn btn-success btn-lg mt-3 whatsapp-btn animate__animated animate__pulse animate__infinite">
+                                    <i class="bi bi-whatsapp me-2"></i> Agendar Residencial
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-5">
+                        <div class="card h-100 whatsapp-price-card">
+                            <div class="card-body p-4 p-lg-5">
+                                <h3 class="card-title fw-bold mb-3">Para Empresas</h3>
+                                <p class="card-text fs-5 text-muted">Soluções de TI robustas e contratos de manutenção para seu negócio!</p>
+                                <p class="fs-1 fw-bold text-success mb-3">R$ 90,00</p>
+                                <small class="text-muted d-block mb-3">(Valor da Visita Técnica. Serviços adicionais e contratos cobrados à parte.)</small>
+                                <a href="https://wa.me/5561996556538?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%C2%A0uma%20visita%20t%C3%A9cnica%20para%20minha%20empresa%20(R%24%2090%2C00)." target="_blank" class="btn btn-success btn-lg mt-3 whatsapp-btn animate__animated animate__pulse animate__infinite">
+                                    <i class="bi bi-whatsapp me-2"></i> Agendar Empresarial
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-5 pt-4 border-top">
+                    <h3 class="mb-4 fw-semibold">Informações de Contato</h3>
+                    <p class="lead mb-2"><i class="bi bi-geo-alt-fill text-primary me-2"></i>Atendemos toda <strong>Aracaju e região</strong>.</p>
+                    <p class="lead mb-2"><i class="bi bi-whatsapp text-primary me-2"></i><a href="https://wa.me/5561996556538" target="_blank" class="text-decoration-none premium-link" aria-label="Enviar mensagem no WhatsApp para MULTITECH FIELD">(61) 99655-6538</a></p>
+                    <p class="lead mb-0"><i class="bi bi-clock-fill text-primary me-2"></i>Horário de Atendimento: <strong>Segunda a Sexta, 08h às 18h</strong></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-white-50">
+        <div class="container text-center text-md-start">
+            <div class="row gy-4 align-items-center">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <a class="navbar-brand d-flex align-items-center justify-content-center justify-content-md-start mb-2" href="#home" aria-label="Página inicial MULTITECH FIELD">
+                        <img src="img/MULTITECH.png" alt="Logotipo MULTITECH FIELD" height="30">
+                        <span class="ms-2">MULTITECH FIELD</span>
+                    </a>
+                    <p class="small opacity-75 mb-0">Soluções de TI com excelência e qualidade em Aracaju.</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Links Rápidos</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#home" class="premium-link">Início</a></li>
+                        <li><a href="#servicos" class="premium-link">Serviços</a></li>
+                        <li><a href="#residencia" class="premium-link">Para Residências</a></li>
+                        <li><a href="#empresas" class="premium-link">Para Empresas</a></li>
+                        <li><a href="#sobre" class="premium-link">Sobre Nós</a></li>
+                        <li><a href="#contato" class="premium-link">Contato</a></li>
                     </ul>
-                    <div class="mt-4">
-                        <p class="fw-bold fs-5">Visita Técnica Residencial: R$70,00</p>
-                        <small class="text-muted">Valor pago no ato do agendamento, cobrindo o deslocamento e o diagnóstico inicial.</small>
-                    </div>
                 </div>
-                <div class="col-lg-6">
-                    <h3 class="display-5 fw-bold text-primary mb-4">Serviços Empresariais</h3>
-                    <p class="lead mb-4">Sua empresa em Aracaju precisa de uma T.I. robusta e confiável. A Multitech oferece soluções que garantem a continuidade e a segurança dos seus negócios.</p>
-                    <ul class="list-unstyled service-list">
-                        <li><i class="fas fa-server text-info me-3"></i> Manutenção e Gerenciamento de Servidores e Estações</li>
-                        <li><i class="fas fa-network-wired text-success me-3"></i> Implementação e Otimização de Redes Corporativas</li>
-                        <li><i class="fas fa-cloud-upload-alt text-warning me-3"></i> Soluções de Backup e Recuperação de Desastres</li>
-                        <li><i class="fas fa-lock text-danger me-3"></i> Segurança da Informação e Proteção contra Ciberataques</li>
-                        <li><i class="fas fa-chart-line text-primary me-3"></i> Consultoria em T.I. e Planejamento Estratégico</li>
+                <div class="col-md-4">
+                    <h5>Siga-nos</h5>
+                    <ul class="list-unstyled d-flex justify-content-center justify-content-md-start mb-0">
+                        <li class="me-3"><a href="#" aria-label="Facebook" class="premium-social-icon text-white-50"><i class="bi bi-facebook fs-4"></i></a></li>
+                        <li class="me-3"><a href="#" aria-label="Instagram" class="premium-social-icon text-white-50"><i class="bi bi-instagram fs-4"></i></a></li>
+                        <li><a href="#" aria-label="LinkedIn" class="premium-social-icon text-white-50"><i class="bi bi-linkedin fs-4"></i></a></li>
                     </ul>
-                    <div class="mt-4">
-                        <p class="fw-bold fs-5">Visita Técnica Empresarial: R$90,00</p>
-                        <small class="text-muted">Valor pago no ato do agendamento, para análise detalhada da infraestrutura.</small>
-                    </div>
                 </div>
             </div>
-            <div class="text-center mt-5">
-                 <a href="https://wa.me/5561996556538" target="_blank" class="btn btn-success btn-lg rounded-pill px-5 py-3 shadow-lg">Agende sua Visita Técnica Agora <i class="fab fa-whatsapp ms-2"></i></a>
+            <hr class="my-4 opacity-25">
+            <div class="text-center small opacity-75 mt-2">
+                © 2025 MULTITECH FIELD. Todos os direitos reservados.
             </div>
-        </div>
-    </section>
-
-    <footer class="bg-dark text-white py-5">
-        <div class="container text-center">
-            <p class="mb-2 fs-5 fw-bold">MULTITECH</p>
-            <p class="mb-1">CNPJ: 47.983.934/0001-54</p>
-            <p class="mb-1">Atendemos em <strong>Aracaju-SE</strong> e Região.</p>
-            <p class="mb-4">Contato: <a href="https://wa.me/5561996556538" target="_blank" class="text-white text-decoration-none"><i class="fab fa-whatsapp me-1"></i> (61) 99655-6538</a> | <a href="mailto:omarcosaferreira@outlook.com" class="text-white text-decoration-none">omarcosaferreira@outlook.com</a></p>
-            <div>
-                <a href="https://www.linkedin.com/in/marcosaraujoferreira" target="_blank" class="text-white mx-3 social-icon"><i class="fab fa-linkedin fa-2x"></i></a>
-            </div>
-            <p class="text-white mt-4 text-muted small">&copy; 2025 MULTITECH. Todos os direitos reservados.</p>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
