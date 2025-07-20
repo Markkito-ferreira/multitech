@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 message = `Olá, MULTITECH FIELD! Minha empresa precisa agendar uma visita técnica em Aracaju. O valor da visita é ${valor}. Nosso problema é: [Por favor, descreva o problema com o máximo de detalhes e, se possível, informe o tipo de equipamento/serviço necessário].`;
             }
 
-            const whatsappNumber = '5561996556538'; // Confirmar este número para Aracaju
+            const whatsappNumber = '5561996556538';
             const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
             window.open(whatsappLink, '_blank');
         });
