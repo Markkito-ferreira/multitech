@@ -1,142 +1,768 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" prefix="og: https://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MULTITECH FIELD - Suporte Técnico de Computadores e Redes em Aracaju-SE | Reparação e Manutenção</title>
-    <meta name="description" content="MULTITECH FIELD: Líder em reparação e manutenção especializada de computadores, notebooks, redes Wi-Fi e instalação de câmeras em Aracaju-SE. Suporte técnico ágil para residências e empresas. Agende sua visita agora via WhatsApp e resolva seus problemas de TI em Sergipe!">
-    <meta name="keywords" content="assistencia tecnica computadores aracaju, manutencao notebook aracaju, remocao virus aracaju, suporte ti empresas aracaju, rede wifi aracaju, instalacao cameras aracaju, formatacao pc aracaju, conserto computador aracaju, tecnico informatica aracaju, suporte especializado aracaju, informatica aracaju, TI Aracaju, conserto notebook Aracaju, seguranca eletronica Aracaju, rede cabeadas Aracaju, manutenção preventiva, instalação de programas, upgrade pc, cftv aracaju, datacenter aracaju, consultoria ti aracaju">
-
-    <meta property="og:title" content="MULTITECH FIELD - Suporte de TI em Aracaju-SE">
-    <meta property="og:description" content="Sua solução completa em reparo de computadores, redes e segurança eletrônica em Aracaju para residências e empresas.">
-    <meta property="og:image" content="https://seusite.com.br/img/logo-multitech.png"> 
-    <meta property="og:url" content="https://multitechfield.com.br/"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#0066FF">
+    
+    <!-- SEO Otimizado para Aracaju-SE -->
+    <title>MULTITECH FIELD | Suporte Técnico e Criação de Sites em Aracaju-SE</title>
+    <meta name="description" content="Especialista em TI e Desenvolvimento Web em Aracaju-SE. Reparo de computadores, redes Wi-Fi, câmeras CFTV e criação de sites de alta conversão para empresas.">
+    <meta name="keywords" content="técnico informática aracaju, suporte ti aracaju, criação de sites aracaju, landing page aracaju, manutenção pc aracaju, redes wifi aracaju, cftv aracaju, desenvolvimento web sergipe">
+    
+    <!-- Open Graph para Redes Sociais -->
+    <meta property="og:title" content="MULTITECH FIELD | Suporte TI e Sites em Aracaju-SE">
+    <meta property="og:description" content="Especialistas em tecnologia em Aracaju. De manutenção de computadores à criação de sites que vendem.">
+    <meta property="og:image" content="https://multitechfield.com.br/img/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://multitechfield.com.br">
     <meta property="og:type" content="website">
-
+    <meta property="og:locale" content="pt_BR">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MULTITECH FIELD | TI & Web Aracaju">
+    <meta name="twitter:description" content="Soluções completas em tecnologia para Aracaju-SE">
+    
+    <!-- Canonical & Robots -->
+    <link rel="canonical" href="https://multitechfield.com.br">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    
+    <!-- Preconnect para performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    
+    <!-- Bootstrap 5.3 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="icon" href="MULTITECH2.png" type="image/x-icon">
-
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "MULTITECH FIELD - Suporte Técnico Aracaju",
-      "image": "https://seusite.com.br/img/logo-multitech.png",
-      "url": "https://seusite.com.br",
-      "telephone": "+5561996556538",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Aracaju",
-        "addressRegion": "SE",
-        "addressCountry": "BR"
-      },
-      "priceRange": "R$70 - R$90",
-      "servesCuisine": "Serviços de Tecnologia",
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday"
-          ],
-          "opens": "08:00",
-          "closes": "18:00"
-        }
-      ],
-      "description": "Especialistas em reparo de computadores, manutenção de redes e instalação de câmeras em Aracaju-SE para residências e empresas."
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "MULTITECH FIELD",
+        "image": "https://multitechfield.com.br/img/logo-multitech.png",
+        "telephone": "+5561996556538",
+        "email": "contato@multitechfield.com.br",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Aracaju",
+            "addressRegion": "SE",
+            "addressCountry": "BR"
+        },
+        "priceRange": "R$70 - R$1500",
+        "openingHours": "Mo-Fr 08:00-18:00",
+        "serviceArea": "Aracaju-SE",
+        "description": "Especialistas em suporte técnico de TI e desenvolvimento web em Aracaju-SE",
+        "url": "https://multitechfield.com.br"
     }
     </script>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NY0XV7V30E">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <style>
+        /* ===== DESIGN SYSTEM ===== */
+        :root {
+            /* Cores Primárias */
+            --primary: #0066FF;
+            --primary-dark: #0052CC;
+            --primary-light: #E6F0FF;
+            --accent: #8B5CF6;
+            --accent-dark: #7C3AED;
+            --accent-light: #F3F0FF;
+            --success: #10B981;
+            --warning: #F59E0B;
+            --danger: #EF4444;
+            
+            /* Tons Neutros */
+            --dark: #0F172A;
+            --darker: #020617;
+            --gray-900: #1E293B;
+            --gray-800: #334155;
+            --gray-700: #475569;
+            --gray-600: #64748B;
+            --gray-500: #94A3B8;
+            --gray-400: #CBD5E1;
+            --gray-300: #E2E8F0;
+            --gray-200: #F1F5F9;
+            --gray-100: #F8FAFC;
+            --white: #FFFFFF;
+            
+            /* Gradientes */
+            --gradient-primary: linear-gradient(135deg, #0066FF 0%, #00C6FF 100%);
+            --gradient-accent: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%);
+            --gradient-dark: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+            --gradient-success: linear-gradient(135deg, #10B981 0%, #34D399 100%);
+            
+            /* Sombras */
+            --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            
+            /* Bordas */
+            --radius-sm: 0.5rem;
+            --radius-md: 0.75rem;
+            --radius-lg: 1rem;
+            --radius-xl: 1.5rem;
+            --radius-2xl: 2rem;
+            --radius-full: 9999px;
+            
+            /* Espaçamento */
+            --space-1: 0.25rem;
+            --space-2: 0.5rem;
+            --space-3: 0.75rem;
+            --space-4: 1rem;
+            --space-6: 1.5rem;
+            --space-8: 2rem;
+            --space-12: 3rem;
+            --space-16: 4rem;
+            --space-20: 5rem;
+            --space-24: 6rem;
+            
+            /* Transições */
+            --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-base: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
 
-  gtag('config', 'G-NY0XV7V30E');
-</script>
-    
+        /* ===== RESET & BASE ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 5rem;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--gray-800);
+            background-color: var(--white);
+            line-height: 1.625;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* ===== TIPOGRAFIA ===== */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--dark);
+            letter-spacing: -0.025em;
+        }
+
+        h1 { font-size: 3.5rem; }
+        h2 { font-size: 2.5rem; }
+        h3 { font-size: 1.875rem; }
+        h4 { font-size: 1.5rem; }
+        h5 { font-size: 1.25rem; }
+
+        .display-1 { font-size: 4.5rem; }
+        .display-2 { font-size: 3.75rem; }
+        .display-3 { font-size: 3rem; }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            h2 { font-size: 2rem; }
+            h3 { font-size: 1.5rem; }
+            .display-1 { font-size: 3rem; }
+            .display-2 { font-size: 2.5rem; }
+        }
+
+        .text-gradient-primary {
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .text-gradient-accent {
+            background: var(--gradient-accent);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .lead {
+            font-size: 1.125rem;
+            line-height: 1.75;
+            color: var(--gray-700);
+        }
+
+        /* ===== LAYOUT UTILITIES ===== */
+        .container {
+            max-width: 1280px;
+        }
+
+        .section {
+            padding: var(--space-20) 0;
+            position: relative;
+        }
+
+        .section-sm {
+            padding: var(--space-12) 0;
+        }
+
+        .section-lg {
+            padding: var(--space-24) 0;
+        }
+
+        /* ===== COMPONENTES ===== */
+        
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1030;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+            transition: all var(--transition-base);
+        }
+
+        .header.scrolled {
+            box-shadow: var(--shadow-md);
+            background: rgba(255, 255, 255, 0.98);
+        }
+
+        .ticker-section {
+            background: var(--gradient-dark);
+            color: var(--white);
+            padding: var(--space-2) 0;
+            font-size: 0.875rem;
+            font-weight: 500;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ticker-content {
+            display: inline-block;
+            white-space: nowrap;
+            animation: ticker 30s linear infinite;
+        }
+
+        @keyframes ticker {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        .navbar-brand {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 900;
+            font-size: 1.75rem;
+            color: var(--dark) !important;
+        }
+
+        .navbar-brand span:first-child {
+            color: var(--primary);
+        }
+
+        .navbar-brand img {
+            height: 48px;
+            transition: transform var(--transition-fast);
+        }
+
+        .navbar-brand:hover img {
+            transform: scale(1.05);
+        }
+
+        .nav-link {
+            font-weight: 500;
+            color: var(--gray-700) !important;
+            padding: var(--space-2) var(--space-3) !important;
+            border-radius: var(--radius-md);
+            transition: all var(--transition-fast);
+            position: relative;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--primary) !important;
+            background: rgba(0, 102, 255, 0.05);
+        }
+
+        .nav-link.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0.25rem;
+            height: 0.25rem;
+            background: var(--primary);
+            border-radius: var(--radius-full);
+        }
+
+        /* Botões */
+        .btn {
+            font-weight: 600;
+            padding: var(--space-3) var(--space-6);
+            border-radius: var(--radius-lg);
+            transition: all var(--transition-fast);
+            border: 2px solid transparent;
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-2);
+        }
+
+        .btn-lg {
+            padding: var(--space-4) var(--space-8);
+            font-size: 1.125rem;
+        }
+
+        .btn-primary {
+            background: var(--gradient-primary);
+            color: var(--white);
+            border: none;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .btn-primary:active {
+            transform: translateY(0);
+        }
+
+        .btn-accent {
+            background: var(--gradient-accent);
+            color: var(--white);
+            border: none;
+            box-shadow: 0 4px 14px rgba(139, 92, 246, 0.3);
+        }
+
+        .btn-accent:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(139, 92, 246, 0.4);
+        }
+
+        .btn-outline-primary {
+            background: transparent;
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-outline-primary:hover {
+            background: var(--primary-light);
+        }
+
+        /* Hero Section */
+        .carousel-section {
+            padding-top: 6rem;
+        }
+
+        .carousel-item {
+            height: 85vh;
+            min-height: 600px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .carousel-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, 
+                rgba(0, 0, 0, 0.8) 0%, 
+                rgba(0, 0, 0, 0.4) 50%, 
+                rgba(0, 0, 0, 0.2) 100%);
+        }
+
+        .carousel-caption {
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            right: 10%;
+            transform: translateY(-50%);
+            text-align: left;
+            z-index: 2;
+        }
+
+        .carousel-caption .badge {
+            font-size: 0.875rem;
+            font-weight: 600;
+            padding: var(--space-2) var(--space-4);
+            border-radius: var(--radius-full);
+            margin-bottom: var(--space-4);
+        }
+
+        .carousel-caption h2 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: var(--space-4);
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            color: var(--white);
+        }
+
+        .carousel-caption .lead {
+            font-size: 1.25rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: var(--space-6);
+            max-width: 36rem;
+        }
+
+        @media (max-width: 992px) {
+            .carousel-item {
+                height: 70vh;
+                min-height: 500px;
+            }
+            
+            .carousel-caption {
+                left: 5%;
+                right: 5%;
+            }
+            
+            .carousel-caption h2 {
+                font-size: 2.5rem;
+            }
+            
+            .carousel-caption .lead {
+                font-size: 1.125rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .carousel-item {
+                height: 60vh;
+                min-height: 400px;
+            }
+            
+            .carousel-caption h2 {
+                font-size: 2rem;
+            }
+        }
+
+        /* Web Section */
+        .web-section {
+            background: var(--dark);
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .web-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            right: -50%;
+            bottom: -50%;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(236, 72, 153, 0.1) 0%, transparent 50%);
+            z-index: 1;
+        }
+
+        .web-badge {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--white);
+            padding: var(--space-2) var(--space-4);
+            border-radius: var(--radius-full);
+            font-weight: 600;
+            font-size: 0.875rem;
+            margin-bottom: var(--space-4);
+        }
+
+        .web-preview {
+            background: var(--white);
+            color: var(--dark);
+            border-radius: var(--radius-xl);
+            padding: var(--space-8);
+            box-shadow: var(--shadow-2xl);
+            transform: rotate(-2deg);
+            transition: transform var(--transition-base);
+        }
+
+        .web-preview:hover {
+            transform: rotate(0deg);
+        }
+
+        /* Cards de Serviços */
+        .img-card-wrapper {
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
+        }
+
+        .img-card-wrapper img {
+            transition: transform var(--transition-slow);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .img-card-wrapper:hover img {
+            transform: scale(1.05);
+        }
+
+        .service-card {
+            background: var(--white);
+            border: 1px solid var(--gray-200);
+            border-radius: var(--radius-lg);
+            padding: var(--space-8);
+            height: 100%;
+            transition: all var(--transition-base);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-primary);
+            border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+        }
+
+        .service-card:hover {
+            transform: translateY(-0.5rem);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--primary-light);
+        }
+
+        .icon-box {
+            font-size: 3rem;
+            margin-bottom: var(--space-6);
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+
+        .icon-box.accent {
+            background: var(--gradient-accent);
+            -webkit-background-clip: text;
+        }
+
+        /* Cards Residencial/Empresarial */
+        .service-type-card {
+            border: none;
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
+            height: 100%;
+            transition: transform var(--transition-base);
+        }
+
+        .service-type-card:hover {
+            transform: translateY(-0.5rem);
+        }
+
+        .service-type-card .card-img-top {
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .service-type-card .card-body {
+            padding: var(--space-8);
+        }
+
+        /* Contato Section */
+        .contact-section {
+            background: var(--gradient-dark);
+            color: var(--white);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--darker);
+            color: var(--white);
+            padding: var(--space-12) 0 var(--space-8);
+        }
+
+        .footer p {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Animações */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-in {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        /* Utilities */
+        .text-shadow {
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hover-lift {
+            transition: transform var(--transition-fast);
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Responsividade adicional */
+        @media (max-width: 768px) {
+            .carousel-caption .btn {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .section {
+                padding: var(--space-12) 0;
+            }
+            
+            .navbar-nav {
+                padding: var(--space-4) 0;
+            }
+            
+            .nav-link {
+                padding: var(--space-3) var(--space-4) !important;
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--gray-100);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--gray-400);
+            border-radius: var(--radius-full);
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--gray-500);
+        }
+    </style>
 </head>
 <body>
-    <header class="header fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+    <!-- Header -->
+    <header class="header fixed-top" id="header">
+        <!-- Ticker -->
+        <div class="ticker-section">
+            <div class="ticker-content">
+                🚀 Atendimento em <strong>Toda Aracaju-SE</strong> | Suporte Técnico e Desenvolvimento Web | WhatsApp: (61) 99655-6538 
+                🚀 Atendimento em <strong>Toda Aracaju-SE</strong> | Suporte Técnico e Desenvolvimento Web | WhatsApp: (61) 99655-6538
+            </div>
+        </div>
+        
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg py-3">
             <div class="container">
-                <a class="navbar-brand d-flex align-items-center" href="#">
-                    <img src="MULTITECH2.png" alt="Logo MULTITECH FIELD - Suporte TI Aracaju" class="me-2" style="height: 45px;">
-                    <span class="fw-bold text-primary">MULTITECH</span> FIELD
+                <a class="navbar-brand d-flex align-items-center gap-3" href="#home">
+                    <img src="MULTITECH2.png" alt="Logo MULTITECH FIELD - Suporte TI e Web em Aracaju" width="48" height="48">
+                    <div>
+                        <span>MULTITECH</span><span>FIELD</span>
+                        <small class="d-block text-muted" style="font-size: 0.75rem;">TI & Web Aracaju-SE</small>
+                    </div>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#quem-somos">Quem Somos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#para-voce">Para Você</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#para-sua-empresa">Para Sua Empresa</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#servicos">Nossos Serviços</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                    <ul class="navbar-nav ms-auto align-items-center gap-2">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#web" style="color: var(--accent)!important;">
+                                <i class="bi bi-code-slash me-1"></i> Sites & Web
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicos">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                        <li class="nav-item ms-2">
+                            <a href="https://wa.me/5561996556538" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-whatsapp"></i> Falar no WhatsApp
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="ticker-section bg-primary text-white py-1">
-            <div class="ticker-wrapper">
-                <div class="ticker-text">
-                    <span><strong>Suporte Técnico Especializado em Aracaju-SE</strong></span>
-                    <span>• <strong>Manutenção de Computadores e Notebooks Ágil</strong></span>
-                    <span>• <strong>Remoção de Vírus Eficaz para Empresas e Residências</strong></span>
-                    <span>• <strong>Configuração de Redes Wi-Fi e Cabeamento Estruturado em Aracaju</strong></span>
-                    <span>• <strong>Instalação Profissional de Câmeras de Segurança</strong></span>
-                    <span>• <strong>Seu Problema de TI Resolvido em Aracaju!</strong></span>
-                </div>
-            </div>
-        </div>
     </header>
 
     <main>
+        <!-- Hero Carousel -->
         <section id="home" class="carousel-section pt-0">
-            <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="6000">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
+            <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
                 <div class="carousel-inner">
+                    <!-- Slide 1: Suporte Técnico -->
                     <div class="carousel-item active" style="background-image: url('hero-multitech-1.png');">
-                        <div class="carousel-caption d-none d-md-block">
-                            <p class="animate__animated animate__fadeInUp animate__delay-0.5s text-uppercase fw-bold text-primary">Reparo de Hardware e Software</p>
-                            <h2 class="display-3 fw-bold animate__animated animate__fadeInDown animate__delay-0.3s">Seu Computador <span class="text-primary">Novo de Novo</span> em Aracaju</h2>
-                            <p class="lead animate__animated animate__fadeInUp animate__delay-0.7s">Especialistas em <strong>manutenção e conserto de PCs e notebooks em Aracaju</strong>, para máxima performance e segurança. Recuperação de dados e upgrades!</p>
-                            <a href="#servicos" class="btn btn-primary btn-lg mt-3 animate__animated animate__zoomIn animate__delay-1s">Conheça Nossos Serviços</a>
+                        <div class="carousel-caption">
+                            <span class="badge bg-primary mb-3">SUPORTE TÉCNICO ESPECIALIZADO</span>
+                            <h2 class="animate-in">Seu Computador <br><span class="text-gradient-primary">Funcionando Perfeitamente</span> em Aracaju</h2>
+                            <p class="lead animate-in">Especialistas em manutenção de PCs e Notebooks em Aracaju-SE. Diagnóstico preciso, reparo rápido e garantia de serviço.</p>
+                            <a href="#servicos" class="btn btn-primary btn-lg animate-in">Conhecer Nossos Serviços</a>
                         </div>
                     </div>
+                    
+                    <!-- Slide 2: Redes Corporativas -->
                     <div class="carousel-item" style="background-image: url('hero-multitech-3.jpg');">
-                        <div class="carousel-caption d-none d-md-block">
-                            <p class="animate__animated animate__fadeInUp animate__delay-0.5s text-uppercase fw-bold text-success">Conectividade e Segurança</p>
-                            <h2 class="display-3 fw-bold animate__animated animate__fadeInDown animate__delay-0.3s">Redes Estáveis e Seguras para Seu Negócio em <span class="text-success">Aracaju</span></h2>
-                            <p class="lead animate__animated animate__fadeInUp animate__delay-0.7s">Soluções completas para <strong>redes cabeadas e Wi-Fi corporativas em Aracaju</strong>, garantindo estabilidade, velocidade e proteção de dados.</p>
-                            <a href="#para-sua-empresa" class="btn btn-success btn-lg mt-3 animate__animated animate__zoomIn animate__delay-1s">Soluções para Empresas</a>
+                        <div class="carousel-caption">
+                            <span class="badge bg-success mb-3">REDES CORPORATIVAS</span>
+                            <h2 class="animate-in">Wi-Fi Estável para <br><span class="text-gradient-primary">Sua Empresa Crescer</span></h2>
+                            <p class="lead animate-in">Cabeamento estruturado e redes mesh de alta performance para empresas em Aracaju. Sua equipe conectada e produtiva.</p>
+                            <a href="#para-sua-empresa" class="btn btn-primary btn-lg animate-in">Soluções Empresariais</a>
                         </div>
                     </div>
+                    
+                    <!-- Slide 3: Segurança -->
                     <div class="carousel-item" style="background-image: url('hero-multitech-2.webp');">
-                        <div class="carousel-caption d-none d-md-block">
-                            <p class="animate__animated animate__fadeInUp animate__delay-0.5s text-uppercase fw-bold text-info">Proteção para Sua Família e Negócio</p>
-                            <h2 class="display-3 fw-bold animate__animated animate__fadeInDown animate__delay-0.3s">Sua Segurança em <span class="text-info">Aracaju</span> em Primeiro Lugar</h2>
-                            <p class="lead animate__animated animate__fadeInUp animate__delay-0.7s">Instalação e configuração de <strong>câmeras de segurança (CFTV)</strong> de alta tecnologia para monitoramento completo de residências e empresas.</p>
-                            <a href="#servicos" class="btn btn-info btn-lg mt-3 animate__animated animate__zoomIn animate__delay-1s">Segurança Inteligente</a>
+                        <div class="carousel-caption">
+                            <span class="badge bg-info text-dark mb-3">SEGURANÇA ELETRÔNICA</span>
+                            <h2 class="animate-in">Monitoramento <br><span class="text-gradient-primary">Inteligente 24/7</span> em Aracaju</h2>
+                            <p class="lead animate-in">Proteja sua família e patrimônio com sistemas CFTV de última geração. Instalação profissional e suporte técnico especializado.</p>
+                            <a href="#servicos" class="btn btn-primary btn-lg animate-in">Conhecer Sistemas de Segurança</a>
                         </div>
                     </div>
                 </div>
+                
                 <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Anterior</span>
@@ -148,145 +774,102 @@
             </div>
         </section>
 
-        ---
-
-        <section class="py-5 text-center bg-white shadow-sm">
-            <div class="container">
-                <h1 class="display-4 fw-bold text-dark mb-4 animate__animated animate__fadeInUp"><strong>MULTITECH FIELD:</strong> A Força da Tecnologia ao Seu Alcance em <span class="text-primary">Aracaju-SE</span></h1>
-                <p class="lead mt-3 mx-auto col-lg-8 animate__animated animate__fadeInUp animate__delay-0.3s">Sua tecnologia funcionando perfeitamente, sempre. A <strong>MULTITECH FIELD</strong> é sua parceira confiável em <strong>soluções de TI em Aracaju</strong>, oferecendo suporte ágil, especializado e personalizado para <strong>residências e empresas</strong>. Não importa o desafio, temos a solução!</p>
-                <div class="mt-5 animate__animated animate__fadeInUp animate__delay-0.5s">
-                    <a href="#para-voce" class="btn btn-primary btn-lg me-3 px-5 py-3">Para Você (Residencial)</a>
-                    <a href="#para-sua-empresa" class="btn btn-outline-dark btn-lg px-5 py-3">Para Sua Empresa (Corporativo)</a>
-                </div>
-            </div>
-        </section>
-
-        ---
-
-        <section id="quem-somos" class="py-5 bg-light animate__animated animate__fadeInUp">
+        <!-- Web Development Section -->
+        <section id="web" class="web-section section">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-md-6 mb-4 mb-md-0">
-                        <img src="card-especialistas.png" class="img-fluid rounded shadow-lg animate__animated animate__zoomIn" alt="Equipe MULTITECH FIELD - Especialistas em TI em Aracaju">
-                    </div>
-                    <div class="col-md-6">
-                        <h2 class="display-5 fw-bold mb-4">Quem Somos: Paixão por Tecnologia e Compromisso em <span class="text-primary">Aracaju</span></h2>
-                        <p class="lead">A <strong>MULTITECH FIELD</strong> nasceu da necessidade de oferecer um <strong>suporte técnico de informática em Aracaju-SE</strong> que realmente faça a diferença. Somos uma equipe de profissionais apaixonados por tecnologia, com vasta experiência em <strong>reparação e manutenção de computadores e equipamentos periféricos</strong>. Nosso foco é descomplicar a TI para você, garantindo que sua vida digital e seus negócios funcionem sem interrupções.</p>
-                        <p class="mt-3">Em <strong>Aracaju</strong>, somos reconhecidos pela agilidade, transparência e pelo atendimento personalizado. Seja um problema complexo em seu servidor ou uma simples dúvida com seu notebook, nossa missão é oferecer soluções eficazes e duradouras. Conte com a <strong>MULTITECH FIELD</strong> para ter a tranquilidade que a tecnologia deve proporcionar.</p>
-                        <a href="#contato" class="btn btn-outline-primary mt-4">Fale com Nossos Especialistas</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        ---
-
-        <section id="para-voce" class="py-5 bg-white parallax-section">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6 order-md-2 mb-4 mb-md-0" data-gsap-parallax-x="-150">
-                        <img src="bg-residential.png" class="img-fluid rounded shadow-lg animate__animated animate__fadeInRight" alt="Suporte Técnico Residencial de Computadores em Aracaju-SE">
-                    </div>
-                    <div class="col-md-6 order-md-1" data-gsap-parallax-x="150">
-                        <h2 class="display-5 fw-bold mb-4 text-primary">Para Você: Tecnologia Sem Complicações no Seu Lar em <span class="text-dark">Aracaju</span></h2>
-                        <p class="lead mt-4">Seu computador lento? Vírus atacando? A internet não funciona como deveria? A <strong>MULTITECH FIELD</strong> leva o melhor <strong>suporte técnico residencial em Aracaju</strong> até você. Nossos especialistas resolvem seus problemas de informática com agilidade, segurança e no conforto da sua casa, garantindo que sua vida digital seja produtiva e livre de estresse.</p>
-                        <ul class="list-unstyled mt-4 service-list">
-                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> <strong>Formatação de Computadores e Notebooks em Aracaju:</strong> Deixe seu PC ou notebook como novo, rápido e sem falhas, com otimização completa do sistema operacional.</li>
-                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> <strong>Remoção de Vírus, Malwares e Adwares:</strong> Proteja seus dados e sua privacidade com nossa limpeza profunda, incluindo instalação e configuração de antivírus.</li>
-                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> <strong>Configuração e Otimização de Redes Wi-Fi Residenciais:</strong> Solucionamos problemas de sinal, aumentamos o alcance e a velocidade da sua internet em todos os cômodos.</li>
-                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> <strong>Instalação de Softwares, Impressoras e Periféricos:</strong> Auxiliamos na instalação de qualquer programa ou hardware, garantindo compatibilidade e funcionamento perfeito.</li>
-                            <li><i class="bi bi-check-circle-fill text-success me-2"></i> <strong>Manutenção Preventiva e Corretiva de Hardware:</strong> Conserto de componentes, troca de peças, limpeza interna e upgrades para prolongar a vida útil do seu equipamento.</li>
+                    <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 2;">
+                        <span class="web-badge mb-4">CRESCIMENTO DIGITAL</span>
+                        <h2 class="display-4 fw-bold mb-4">Sua Empresa Precisa <br><span class="text-gradient-accent">Vender Online</span></h2>
+                        <p class="lead mb-5" style="color: rgba(255, 255, 255, 0.9);">
+                            Não fazemos apenas sites bonitos. Criamos <strong>Landing Pages de Alta Conversão</strong> focadas em transformar visitantes em clientes reais em Aracaju.
+                        </p>
+                        
+                        <ul class="list-unstyled mb-5">
+                            <li class="mb-3 d-flex align-items-center">
+                                <i class="bi bi-check-circle-fill text-warning fs-5 me-3"></i>
+                                <div>
+                                    <strong>Sites Otimizados para o Google</strong>
+                                    <p class="small mb-0" style="color: rgba(255, 255, 255, 0.7);">SEO técnico para aparecer nas primeiras posições</p>
+                                </div>
+                            </li>
+                            <li class="mb-3 d-flex align-items-center">
+                                <i class="bi bi-check-circle-fill text-warning fs-5 me-3"></i>
+                                <div>
+                                    <strong>Design Responsivo (Celular/PC)</strong>
+                                    <p class="small mb-0" style="color: rgba(255, 255, 255, 0.7);">Experiência perfeita em todos os dispositivos</p>
+                                </div>
+                            </li>
+                            <li class="mb-3 d-flex align-items-center">
+                                <i class="bi bi-check-circle-fill text-warning fs-5 me-3"></i>
+                                <div>
+                                    <strong>Integração com WhatsApp e Redes</strong>
+                                    <p class="small mb-0" style="color: rgba(255, 255, 255, 0.7);">Botões de ação que convertem visitantes em clientes</p>
+                                </div>
+                            </li>
                         </ul>
-                        <p class="mt-4 fs-5 fw-bold text-danger"><strong>Valor da Visita Técnica Residencial:</strong> R$70,00 <span class="text-muted">(Pagamento no ato do agendamento)</span></p>
-                        <a href="#" class="btn btn-primary btn-lg agendar-btn" data-type="residencial"><i class="bi bi-whatsapp me-2"></i> Agendar Atendimento Residencial em Aracaju</a>
+                        
+                        <a href="https://wa.me/5561996556538?text=Olá!%20Quero%20um%20site%20para%20minha%20empresa%20em%20Aracaju" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="btn btn-accent btn-lg">
+                            <i class="bi bi-code-slash me-2"></i> Solicitar Orçamento de Site
+                        </a>
+                    </div>
+                    
+                    <div class="col-lg-6 text-center" style="z-index: 2;">
+                        <div class="web-preview animate-in">
+                            <i class="bi bi-window-sidebar text-accent display-1 mb-4"></i>
+                            <h4 class="fw-bold mb-3">Landing Page Premium</h4>
+                            <p class="text-muted mb-4">Aumente suas vendas com uma presença digital profissional e otimizada para conversão.</p>
+                            <div class="d-flex justify-content-center gap-3">
+                                <span class="badge bg-primary">SEO Otimizado</span>
+                                <span class="badge bg-success">Responsivo</span>
+                                <span class="badge bg-accent">Alta Conversão</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        ---
-
-        <section id="para-sua-empresa" class="py-5 bg-dark text-white parallax-section">
+        <!-- Sobre Nós -->
+        <section id="quem-somos" class="section">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-md-6 mb-4 mb-md-0" data-gsap-parallax-x="150">
-                        <img src="bg-corporate.png" class="img-fluid rounded shadow-lg animate__animated animate__fadeInLeft" alt="Suporte de TI para Empresas em Aracaju-SE">
-                    </div>
-                    <div class="col-md-6" data-gsap-parallax-x="-150">
-                        <h2 class="display-5 fw-bold mb-4 text-success">Para Sua Empresa: Soluções em TI que Impulsionam seu Negócio em <span class="text-info">Aracaju</span></h2>
-                        <p class="lead mt-4">Sua empresa precisa de uma infraestrutura de TI robusta e eficiente para crescer e competir? A <strong>MULTITECH FIELD</strong> oferece <strong>suporte de TI estratégico e completo para empresas em Aracaju</strong>, garantindo a produtividade, segurança e otimização dos seus sistemas. Da manutenção de servidores à instalação de sistemas de segurança, somos a solução ideal para que sua equipe trabalhe sem interrupções.</p>
-                        <ul class="list-unstyled mt-4 service-list">
-                            <li><i class="bi bi-check-circle-fill text-warning me-2"></i> <strong>Manutenção de Redes Cabeadas e Wi-Fi Corporativas:</strong> Design, instalação e otimização de infraestruturas de rede para máxima velocidade e segurança de dados.</li>
-                            <li><i class="bi bi-check-circle-fill text-warning me-2"></i> <strong>Instalação e Configuração de Câmeras de Segurança (CFTV Profissional):</strong> Sistemas de monitoramento avançados para a proteção do seu patrimônio em Aracaju.</li>
-                            <li><i class="bi bi-check-circle-fill text-warning me-2"></i> <strong>Remoção de Vírus, Proteção Cibernética e Backup de Dados:</strong> Blindamos sua empresa contra ameaças digitais e garantimos a recuperação de informações críticas.</li>
-                            <li><i class="bi bi-check-circle-fill text-warning me-2"></i> <strong>Suporte Técnico On-site e Remoto para Estações de Trabalho:</strong> Atendimento ágil e eficaz para PCs, notebooks e periféricos de todos os colaboradores.</li>
-                            <li><i class="bi bi-check-circle-fill text-warning me-2"></i> <strong>Consultoria em TI e Otimização de Servidores:</strong> Avaliação e implementação de soluções tecnológicas para melhorar a eficiência e reduzir custos operacionais.</li>
-                        </ul>
-                        <p class="mt-4 fs-5 fw-bold text-danger"><strong>Valor da Visita Técnica Empresarial:</strong> R$90,00 <span class="text-muted">(Pagamento no ato do agendamento)</span></p>
-                        <a href="#" class="btn btn-success btn-lg agendar-btn" data-type="empresarial"><i class="bi bi-whatsapp me-2"></i> Agendar Suporte Empresarial em Aracaju</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        ---
-
-        <section id="servicos" class="py-5 bg-light animate__animated animate__fadeInUp">
-            <div class="container text-center">
-                <h2 class="display-5 fw-bold mb-5">Nossos Serviços Especializados em <span class="text-primary">Tecnologia para Aracaju-SE</span></h2>
-                <p class="lead mb-5 mx-auto col-lg-8">A <strong>MULTITECH FIELD</strong> oferece um leque completo de <strong>soluções em TI em Aracaju</strong>, desenvolvidas para atender às suas necessidades com excelência, rapidez e segurança. Descubra como podemos otimizar seu dia a dia digital:</p>
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                    <div class="col">
-                        <div class="card h-100 shadow-sm service-card" data-gsap-parallax-x-card="-50">
-                            <div class="card-body">
-                                <i class="bi bi-cpu display-4 text-primary mb-3"></i>
-                                <h5 class="card-title text-primary">Reparação e Manutenção de Computadores</h5>
-                                <p class="card-text">Seu PC ou notebook está com falhas, lento ou não liga? Somos especialistas em <strong>reparação e manutenção de computadores em Aracaju</strong> para desktops e laptops de todas as marcas. Realizamos diagnósticos precisos, substituição de componentes (tela, teclado, bateria, HD/SSD), reparos em placa-mãe, e upgrades de hardware para trazer seu equipamento de volta à vida e otimizar seu desempenho.</p>
-                            </div>
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <div class="img-card-wrapper animate-in">
+                            <img src="card-especialistas.png" alt="Equipe MULTITECH FIELD trabalhando em Aracaju" 
+                                 class="img-fluid" width="600" height="400" loading="lazy">
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card h-100 shadow-sm service-card" data-gsap-parallax-x-card="0">
-                            <div class="card-body">
-                                <i class="bi bi-hdd-fill display-4 text-primary mb-3"></i>
-                                <h5 class="card-title text-primary">Formatação e Otimização de Sistemas</h5>
-                                <p class="card-text">Dê um fôlego novo ao seu equipamento! Nossa <strong>formatação de computadores e notebooks em Aracaju</strong> inclui a reinstalação limpa do sistema operacional (Windows, macOS, Linux), instalação de drivers atualizados e programas essenciais. Além disso, realizamos otimizações de sistema para garantir inicialização rápida, fluidez e máximo desempenho, eliminando arquivos desnecessários e conflitos.</p>
+                    
+                    <div class="col-lg-6 ps-lg-5">
+                        <h2 class="fw-bold mb-4">Tecnologia com <span class="text-gradient-primary">DNA Sergipano</span></h2>
+                        <p class="lead mb-4">
+                            A MULTITECH FIELD combina expertise técnica com atendimento humanizado. Somos apaixonados por resolver problemas complexos de forma simples e eficiente.
+                        </p>
+                        
+                        <p class="mb-5">
+                            Com mais de 10 anos de experiência no mercado de TI em Aracaju, entendemos as necessidades únicas de cada cliente, seja uma residência ou uma grande empresa. Nossa missão é fazer sua tecnologia funcionar, para que você possa focar no que realmente importa.
+                        </p>
+                        
+                        <div class="row text-center">
+                            <div class="col-6 col-md-3 mb-4">
+                                <h3 class="fw-bold text-primary display-6">10+</h3>
+                                <p class="small text-muted">Anos de Experiência</p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100 shadow-sm service-card" data-gsap-parallax-x-card="50">
-                            <div class="card-body">
-                                <i class="bi bi-bug-fill display-4 text-primary mb-3"></i>
-                                <h5 class="card-title text-primary">Remoção de Vírus e Segurança Digital</h5>
-                                <p class="card-text">Proteja seus dados e sua privacidade! Nossa <strong>remoção de vírus em Aracaju</strong> é completa, eliminando malwares, trojans, ransomware, adwares e spywares. Além da limpeza, configuramos e instalamos softwares de segurança como antivírus e firewalls, oferecemos consultoria em segurança digital e orientações para prevenção, blindando seu sistema contra futuras ameaças cibernéticas.</p>
+                            <div class="col-6 col-md-3 mb-4">
+                                <h3 class="fw-bold text-primary display-6">500+</h3>
+                                <p class="small text-muted">Clientes Atendidos</p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100 shadow-sm service-card" data-gsap-parallax-x-card="-50">
-                            <div class="card-body">
-                                <i class="bi bi-wifi display-4 text-primary mb-3"></i>
-                                <h5 class="card-title text-primary">Serviços de Redes Cabeadas e Wi-Fi</h5>
-                                <p class="card-text">Garanta uma conexão estável e veloz em toda a sua casa ou empresa. Realizamos <strong>instalação, configuração e otimização de redes cabeadas e Wi-Fi em Aracaju</strong>. Solucionamos problemas de sinal fraco, quedas de conexão, configuramos roteadores, repetidores e access points. Oferecemos também serviços de cabeamento estruturado para ambientes corporativos, garantindo infraestrutura robusta.</p>
+                            <div class="col-6 col-md-3 mb-4">
+                                <h3 class="fw-bold text-primary display-6">24h</h3>
+                                <p class="small text-muted">Suporte Ágil</p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100 shadow-sm service-card" data-gsap-parallax-x-card="0">
-                            <div class="card-body">
-                                <i class="bi bi-camera-reels-fill display-4 text-primary mb-3"></i>
-                                <h5 class="card-title text-primary">Instalação de Câmeras de Segurança (CFTV)</h5>
-                                <p class="card-text">Aumente a segurança do seu patrimônio em Aracaju com nossos sistemas de monitoramento. Oferecemos <strong>instalação de câmeras de segurança em Aracaju</strong> para residências, condomínios e empresas. Trabalhamos com sistemas de CFTV modernos, incluindo câmeras IP, analógicas, com acesso remoto via celular e gravação em DVR/NVR. Conte com a gente para projetos completos de segurança eletrônica.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100 shadow-sm service-card" data-gsap-parallax-x-card="50">
-                            <div class="card-body">
-                                <i class="bi bi-headset display-4 text-primary mb-3"></i>
-                                <h5 class="card-title text-primary">Suporte Técnico Especializado (Geral)</h5>
-                                <p class="card-text">Para qualquer desafio tecnológico que você ou sua empresa enfrentem em Aracaju. Nosso <strong>suporte técnico especializado</strong> abrange uma vasta gama de necessidades, incluindo recuperação de dados, instalação e configuração de softwares específicos, montagem de computadores personalizados, consultoria em TI, problemas com periféricos e muito mais. Estamos prontos para resolver seus problemas com expertise e agilidade.</p>
+                            <div class="col-6 col-md-3 mb-4">
+                                <h3 class="fw-bold text-primary display-6">100%</h3>
+                                <p class="small text-muted">Satisfação</p>
                             </div>
                         </div>
                     </div>
@@ -294,57 +877,90 @@
             </div>
         </section>
 
-        ---
-
-        <section id="faq" class="py-5 bg-white animate__animated animate__fadeInUp">
+        <!-- Serviços Residencial vs Empresarial -->
+        <section class="section bg-light">
             <div class="container">
-                <h2 class="display-5 fw-bold text-center mb-5">Perguntas Frequentes sobre Suporte de TI em <span class="text-primary">Aracaju</span></h2>
-                <div class="accordion accordion-flush" id="faqAccordion">
-                    <div class="accordion-item shadow-sm mb-3 rounded">
-                        <h2 class="accordion-header" id="flush-headingOne">
-                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                Quais tipos de equipamentos a MULTITECH FIELD repara em Aracaju?
-                            </button>
-                        </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                A <strong>MULTITECH FIELD</strong> realiza <strong>reparação e manutenção de computadores</strong> (desktops e notebooks), equipamentos periféricos como impressoras, monitores, e também atua com redes, roteadores e sistemas de câmeras de segurança (CFTV). Se você tem um problema com qualquer dispositivo tecnológico em <strong>Aracaju-SE</strong>, entre em contato!
+                <div class="row g-5">
+                    <!-- Residencial -->
+                    <div class="col-lg-6">
+                        <div class="service-type-card animate-in" id="para-voce">
+                            <div style="height: 300px; background: url('bg-residential.png') center/cover;"></div>
+                            <div class="card-body">
+                                <h3 class="fw-bold text-primary mb-3">Para Sua Casa em Aracaju</h3>
+                                <p class="text-muted mb-4">
+                                    Computador lento? Vírus? Wi-Fi fraco? Resolvemos seus problemas tecnológicos no conforto do seu lar.
+                                </p>
+                                
+                                <ul class="list-unstyled mb-4">
+                                    <li class="mb-2 d-flex align-items-start">
+                                        <i class="bi bi-check-circle-fill text-success mt-1 me-2"></i>
+                                        <span>Formatação de computadores com backup dos seus arquivos</span>
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-start">
+                                        <i class="bi bi-check-circle-fill text-success mt-1 me-2"></i>
+                                        <span>Otimização e ampliação de sinal Wi-Fi residencial</span>
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-start">
+                                        <i class="bi bi-check-circle-fill text-success mt-1 me-2"></i>
+                                        <span>Remoção de vírus e proteção contra malware</span>
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-start">
+                                        <i class="bi bi-check-circle-fill text-success mt-1 me-2"></i>
+                                        <span>Instalação de programas e configuração de dispositivos</span>
+                                    </li>
+                                </ul>
+                                
+                                <div class="d-flex justify-content-between align-items-center mt-4">
+                                    <div>
+                                        <h5 class="fw-bold text-primary mb-0">Visita Técnica:</h5>
+                                        <span class="text-muted">R$ 70,00 (pagamento no agendamento)</span>
+                                    </div>
+                                    <button class="btn btn-primary agendar-btn" data-type="residencial">
+                                        <i class="bi bi-calendar-check me-2"></i> Agendar Visita
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="accordion-item shadow-sm mb-3 rounded">
-                        <h2 class="accordion-header" id="flush-headingTwo">
-                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                Qual a diferença de valor da visita técnica residencial para empresarial em Aracaju?
-                            </button>
-                        </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                A visita técnica para <strong>residências em Aracaju</strong> tem o valor de <strong>R$70,00</strong>. Já para <strong>empresas em Aracaju</strong>, o valor é de <strong>R$90,00</strong>. Ambos os valores são pagos no ato do agendamento para garantir a disponibilidade do nosso técnico especializado.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item shadow-sm mb-3 rounded">
-                        <h2 class="accordion-header" id="flush-headingThree">
-                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                Como faço para agendar um serviço e descrever meu problema?
-                            </button>
-                        </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                Para solicitar um serviço da <strong>MULTITECH FIELD em Aracaju</strong>, basta clicar nos botões "Agendar Atendimento Residencial" ou "Agendar Atendimento Empresarial" que você será redirecionado para o nosso WhatsApp: <strong>(61) 99655-6538</strong>. É fundamental que você <strong>descreva o problema enfrentado com o máximo de detalhes</strong> para que possamos entender a situação e preparar a melhor solução para sua visita técnica em <strong>Aracaju-SE</strong>.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item shadow-sm mb-3 rounded">
-                        <h2 class="accordion-header" id="flush-headingFour">
-                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                                A MULTITECH FIELD oferece garantia nos serviços prestados em Aracaju?
-                            </button>
-                        </h2>
-                        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body">
-                                Sim, na <strong>MULTITECH FIELD em Aracaju</strong> prezamos pela qualidade e satisfação do cliente. Todos os nossos serviços de <strong>reparação e manutenção de computadores, redes e instalação de câmeras</strong> possuem garantia. Os termos e prazos específicos são informados no momento do atendimento, garantindo a sua tranquilidade.
+                    
+                    <!-- Empresarial -->
+                    <div class="col-lg-6">
+                        <div class="service-type-card text-white bg-dark animate-in" id="para-sua-empresa">
+                            <div style="height: 300px; background: url('bg-corporate.png') center/cover;"></div>
+                            <div class="card-body">
+                                <h3 class="fw-bold text-success mb-3">Para Sua Empresa em Aracaju</h3>
+                                <p class="text-white-50 mb-4">
+                                    Infraestrutura robusta para seu negócio não parar nunca. Suporte empresarial completo.
+                                </p>
+                                
+                                <ul class="list-unstyled mb-4">
+                                    <li class="mb-2 d-flex align-items-start">
+                                        <i class="bi bi-check-circle-fill text-success mt-1 me-2"></i>
+                                        <span>Redes corporativas e cabeamento estruturado</span>
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-start">
+                                        <i class="bi bi-check-circle-fill text-success mt-1 me-2"></i>
+                                        <span>Configuração e manutenção de servidores</span>
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-start">
+                                        <i class="bi bi-check-circle-fill text-success mt-1 me-2"></i>
+                                        <span>Sistemas de segurança CFTV empresarial</span>
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-start">
+                                        <i class="bi bi-check-circle-fill text-success mt-1 me-2"></i>
+                                        <span>Contratos de manutenção preventiva</span>
+                                    </li>
+                                </ul>
+                                
+                                <div class="d-flex justify-content-between align-items-center mt-4">
+                                    <div>
+                                        <h5 class="fw-bold text-success mb-0">Visita Técnica:</h5>
+                                        <span class="text-white-50">R$ 90,00 (pagamento no agendamento)</span>
+                                    </div>
+                                    <button class="btn btn-success agendar-btn" data-type="empresarial">
+                                        <i class="bi bi-building me-2"></i> Suporte Empresarial
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -352,32 +968,356 @@
             </div>
         </section>
 
-        ---
+        <!-- Serviços Especializados -->
+        <section id="servicos" class="section">
+            <div class="container">
+                <div class="text-center mb-6">
+                    <h2 class="fw-bold display-5 mb-3">Nossas <span class="text-gradient-primary">Especialidades</span></h2>
+                    <p class="lead text-muted mx-auto" style="max-width: 700px;">
+                        Tudo o que você precisa em tecnologia, de manutenção básica à presença digital completa.
+                    </p>
+                </div>
+                
+                <div class="row g-5">
+                    <!-- Hardware & Reparo -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-card animate-in">
+                            <i class="bi bi-cpu icon-box d-block"></i>
+                            <h5 class="fw-bold mb-3">Hardware & Reparo</h5>
+                            <p class="text-muted mb-4">
+                                Diagnóstico preciso e reparo de componentes. Troca de telas, baterias, teclados e reparo de placa-mãe para PCs e notebooks.
+                            </p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-check text-success me-2"></i>
+                                    <span>Troca de componentes</span>
+                                </li>
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-check text-success me-2"></i>
+                                    <span>Limpeza interna</span>
+                                </li>
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-check text-success me-2"></i>
+                                    <span>Upgrade de hardware</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Redes e Servidores -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-card animate-in">
+                            <i class="bi bi-hdd-network icon-box d-block"></i>
+                            <h5 class="fw-bold mb-3">Redes e Servidores</h5>
+                            <p class="text-muted mb-4">
+                                Configuração profissional de roteadores, switches e cabeamento estruturado para empresas e residências em Aracaju.
+                            </p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-check text-success me-2"></i>
+                                    <span>Redes Wi-Fi mesh</span>
+                                </li>
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-check text-success me-2"></i>
+                                    <span>Cabeamento estruturado</span>
+                                </li>
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-check text-success me-2"></i>
+                                    <span>Segurança de rede</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Sites & Landing Pages -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-card animate-in">
+                            <i class="bi bi-code-square icon-box d-block accent"></i>
+                            <h5 class="fw-bold mb-3">Sites & Landing Pages</h5>
+                            <p class="text-muted mb-4">
+                                Desenvolvimento web focado em vendas e posicionamento no Google. Landing pages otimizadas para converter visitantes em clientes.
+                            </p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-check text-success me-2"></i>
+                                    <span>SEO técnico otimizado</span>
+                                </li>
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-check text-success me-2"></i>
+                                    <span>Design responsivo</span>
+                                </li>
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-check text-success me-2"></i>
+                                    <span>Alta taxa de conversão</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- CFTV e Segurança -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-card animate-in">
+                            <i class="bi bi-camera-video icon-box d-block"></i>
+                            <h5 class="fw-bold mb-3">CFTV e Segurança</h5>
+                            <p class="text-muted mb-4">
+                                Instalação profissional de sistemas de monitoramento com acesso remoto via celular e gravação em nuvem.
+                            </p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-check text-success me-2"></i>
+                                    <span>Instalação DVR/NVR</span>
+                                </li>
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-check text-success me-2"></i>
+                                    <span>Acesso remoto via app</span>
+                                </li>
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-check text-success me-2"></i>
+                                    <span>Gravação 24/7</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Suporte Técnico -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-card animate-in">
+                            <i class="bi bi-headset icon-box d-block"></i>
+                            <h5 class="fw-bold mb-3">Suporte Técnico</h5>
+                            <p class="text-muted mb-4">
+                                Atendimento especializado para resolver seus problemas tecnológicos com agilidade e eficiência.
+                            </p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-check text-success me-2"></i>
+                                    <span>Atendimento on-site</span>
+                                </li>
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-check text-success me-2"></i>
+                                    <span>Suporte remoto</span>
+                                </li>
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-check text-success me-2"></i>
+                                    <span>Manutenção preventiva</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Consultoria em TI -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-card animate-in">
+                            <i class="bi bi-clipboard-data icon-box d-block"></i>
+                            <h5 class="fw-bold mb-3">Consultoria em TI</h5>
+                            <p class="text-muted mb-4">
+                                Análise e otimização dos processos tecnológicos da sua empresa para aumentar produtividade e reduzir custos.
+                            </p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-check text-success me-2"></i>
+                                    <span>Diagnóstico tecnológico</span>
+                                </li>
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-check text-success me-2"></i>
+                                    <span>Planejamento de TI</span>
+                                </li>
+                                <li class="mb-2 d-flex align-items-center">
+                                    <i class="bi bi-check text-success me-2"></i>
+                                    <span>Migração para nuvem</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <section id="contato" class="py-5 bg-dark text-white animate__animated animate__fadeInUp">
-            <div class="container text-center">
-                <h2 class="display-5 fw-bold mb-4">Fale Conosco: Suporte Rápido e Eficiente em <span class="text-primary">Aracaju-SE</span></h2>
-                <p class="lead mb-5 mx-auto col-lg-8">Pronto para resolver seus problemas de tecnologia com a <strong>MULTITECH FIELD</strong>? Nosso atendimento é <strong>ágil e conveniente via WhatsApp</strong> para todas as suas necessidades em <strong>Aracaju</strong>!</p>
-                <p class="display-5 mb-4 fw-bold"><i class="bi bi-whatsapp me-3 text-success"></i> <strong>WhatsApp: (61) 99655-6538</strong></p>
-                <a href="https://wa.me/5561996556538" target="_blank" class="btn btn-outline-success btn-lg mb-4 px-5 py-3 animate__animated animate__bounceIn">
-                    <i class="bi bi-whatsapp me-2"></i> Iniciar Conversa Agora no WhatsApp
-                </a>
-                <p class="mt-4 fs-5"><strong>Importante:</strong> Para agilizar seu atendimento e garantir a melhor solução, por favor, <strong>descreva o problema enfrentado com o máximo de detalhes</strong> ao nos contatar. Isso nos ajuda a preparar o suporte ideal para você em <strong>Aracaju</strong>!</p>
-                <p class="mt-4 text-muted">Atendimento de Segunda a Sexta-feira, das 8h às 18h.</p>
+        <!-- Contato -->
+        <section id="contato" class="contact-section section">
+            <div class="container">
+                <div class="text-center mb-6">
+                    <h2 class="fw-bold text-white mb-3">Fale Conosco</h2>
+                    <p class="lead text-white-50 mx-auto" style="max-width: 600px;">
+                        Pronto para resolver seus problemas de tecnologia? Nosso atendimento é rápido via WhatsApp.
+                    </p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="mb-5">
+                        <h3 class="text-white mb-4">
+                            <i class="bi bi-whatsapp text-success me-2"></i>
+                            WhatsApp: (61) 99655-6538
+                        </h3>
+                        <p class="text-white-50">
+                            Resposta em até 5 minutos durante horário comercial
+                        </p>
+                    </div>
+                    
+                    <a href="https://wa.me/5561996556538" 
+                       class="btn btn-success btn-lg px-5 py-3 mb-4"
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        <i class="bi bi-whatsapp me-2"></i> Iniciar Conversa Agora
+                    </a>
+                    
+                    <p class="text-white-50 mt-4">
+                        <i class="bi bi-info-circle me-2"></i>
+                        Para agilizar seu atendimento, descreva o problema com o máximo de detalhes possível.
+                    </p>
+                    
+                    <p class="text-white-50 small">
+                        Atendimento de Segunda a Sexta, das 08h às 18h | Sábado, das 09h às 13h
+                    </p>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer bg-dark text-white-50 py-4">
-        <div class="container text-center">
-            <p class="mb-1">&copy; <span id="current-year"></span> MULTITECH FIELD. Todos os direitos reservados. Sua <strong>Assistência Técnica de Computadores e Redes em Aracaju-SE</strong>.</p>
-            <p class="mb-0">Transformando desafios tecnológicos em soluções inovadoras.</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8 mb-4 mb-md-0">
+                    <h5 class="fw-bold text-white mb-3">MULTITECH FIELD</h5>
+                    <p class="mb-2">
+                        Suporte técnico especializado em TI e desenvolvimento web em Aracaju-SE. 
+                        Reparo, manutenção e criação de soluções tecnológicas que fazem a diferença.
+                    </p>
+                    <p class="small mb-0">
+                        CNPJ: XX.XXX.XXX/0001-XX | Aracaju, Sergipe
+                    </p>
+                </div>
+                
+                <div class="col-md-4 text-md-end">
+                    <div class="d-flex justify-content-center justify-content-md-end gap-3">
+                        <a href="#" class="text-white-50 hover-lift">
+                            <i class="bi bi-instagram fs-5"></i>
+                        </a>
+                        <a href="#" class="text-white-50 hover-lift">
+                            <i class="bi bi-facebook fs-5"></i>
+                        </a>
+                        <a href="#" class="text-white-50 hover-lift">
+                            <i class="bi bi-linkedin fs-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-5" style="border-color: rgba(255, 255, 255, 0.1);">
+            
+            <div class="text-center">
+                <p class="mb-0">
+                    &copy; <span id="currentYear"></span> MULTITECH FIELD. Todos os direitos reservados.
+                    <span class="d-block d-md-inline">Aracaju-SE, Brasil.</span>
+                </p>
+            </div>
         </div>
     </footer>
 
+    <!-- Bootstrap Bundle JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-    <script src=""></script>
+    
+    <!-- Custom JS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Atualizar ano no footer
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+            
+            // Header scroll effect
+            const header = document.getElementById('header');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 100) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+            
+            // Botões de agendamento WhatsApp
+            document.querySelectorAll('.agendar-btn').forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const type = this.dataset.type;
+                    let message = '';
+                    let price = '';
+                    
+                    if (type === 'residencial') {
+                        price = 'R$70,00';
+                        message = `Olá MULTITECH FIELD! Gostaria de agendar uma visita técnica residencial em Aracaju. O valor da visita é ${price}. Meu problema é: [Descreva seu problema aqui]`;
+                    } else if (type === 'empresarial') {
+                        price = 'R$90,00';
+                        message = `Olá MULTITECH FIELD! Minha empresa precisa agendar uma visita técnica em Aracaju. O valor da visita é ${price}. Nosso problema é: [Descreva o problema aqui]`;
+                    }
+                    
+                    const whatsappURL = `https://wa.me/5561996556538?text=${encodeURIComponent(message)}`;
+                    window.open(whatsappURL, '_blank');
+                });
+            });
+            
+            // Smooth scroll para links internos
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    
+                    if (href === '#') return;
+                    
+                    const target = document.querySelector(href);
+                    if (target) {
+                        e.preventDefault();
+                        
+                        const headerHeight = header.offsetHeight;
+                        const targetPosition = target.offsetTop - headerHeight;
+                        
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                        
+                        // Atualizar navegação ativa
+                        document.querySelectorAll('.nav-link').forEach(link => {
+                            link.classList.remove('active');
+                        });
+                        this.classList.add('active');
+                        
+                        // Fechar menu mobile se aberto
+                        const navbarCollapse = document.querySelector('.navbar-collapse');
+                        if (navbarCollapse.classList.contains('show')) {
+                            const toggler = document.querySelector('.navbar-toggler');
+                            toggler.click();
+                        }
+                    }
+                });
+            });
+            
+            // Observador de interseção para animações
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-in');
+                    }
+                });
+            }, observerOptions);
+            
+            // Observar elementos para animação
+            document.querySelectorAll('.service-card, .service-type-card, .web-preview, .img-card-wrapper').forEach(el => {
+                observer.observe(el);
+            });
+            
+            // Inicializar carousel com controle automático
+            const heroCarousel = document.getElementById('heroCarousel');
+            if (heroCarousel) {
+                const carousel = new bootstrap.Carousel(heroCarousel, {
+                    interval: 5000,
+                    wrap: true
+                });
+            }
+        });
+    </script>
 </body>
 </html>
