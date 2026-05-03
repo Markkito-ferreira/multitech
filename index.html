@@ -8,8 +8,11 @@
     
     <!-- SEO Otimizado para Aracaju-SE -->
     <title>MULTITECH FIELD | Suporte Técnico e Criação de Sites em Aracaju-SE</title>
-    <meta name="description" content="Especialista em TI e Desenvolvimento Web em Aracaju-SE.informática, Reparo de computadores, redes Wi-Fi, câmeras CFTV e criação de sites de alta conversão para empresas.">
-    <meta name="keywords" content="técnico informática aracaju, suporte ti aracaju, criação de sites aracaju, landing page aracaju, manutenção pc aracaju, redes wifi aracaju, cftv aracaju, desenvolvimento web sergipe">
+    <meta name="description" content="MULTITECH FIELD é a empresa de TI em Aracaju-SE especializada em suporte técnico, manutenção de computadores, redes Wi-Fi, CFTV e criação de sites otimizados para buscas orgânicas.">
+    <meta name="keywords" content="técnico informática aracaju, suporte ti aracaju, criação de sites aracaju, manutenção pc aracaju, redes wifi aracaju, cftv aracaju, desenvolvimento web sergipe, jetsales, speedtelecom, fortnet">
+    <meta name="author" content="MULTITECH FIELD">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="msapplication-TileColor" content="#0066FF">
     
     <!-- Open Graph para Redes Sociais -->
     <meta property="og:title" content="MULTITECH FIELD | Suporte TI e Sites em Aracaju-SE">
@@ -153,39 +156,72 @@
     }
     </script>
 
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Como agendar uma visita técnica em Aracaju?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Basta clicar no botão do WhatsApp, descrever sua necessidade e informar seu bairro em Aracaju para receber atendimento rápido." 
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Vocês atendem empresas e residências em Aracaju?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sim. Atendemos residências, pequenos negócios e empresas com suporte técnico, redes, CFTV e criação de sites." 
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Fazem instalação de redes Wi-Fi e cabeamento estruturado?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sim. Instalamos redes Wi-Fi, cabeamento estruturado e soluções empresariais com garantia de estabilidade e performance." 
+                }
+            }
+        ]
+    }
+    </script>
+
     <style>
         /* ===== DESIGN SYSTEM ===== */
         :root {
             /* Cores Primárias */
-            --primary: #0066FF;
-            --primary-dark: #0052CC;
-            --primary-light: #E6F0FF;
-            --accent: #8B5CF6;
-            --accent-dark: #7C3AED;
-            --accent-light: #F3F0FF;
-            --success: #10B981;
+            --primary: #104A8A;
+            --primary-dark: #041B34;
+            --primary-light: #B5D8FF;
+            --accent: #00D4FF;
+            --accent-dark: #0078A9;
+            --accent-light: #D8F7FF;
+            --success: #12A96B;
             --warning: #F59E0B;
-            --danger: #EF4444;
+            --danger: #D92A2A;
             
             /* Tons Neutros */
             --dark: #0F172A;
             --darker: #020617;
-            --gray-900: #1E293B;
-            --gray-800: #334155;
-            --gray-700: #475569;
-            --gray-600: #64748B;
-            --gray-500: #94A3B8;
-            --gray-400: #CBD5E1;
-            --gray-300: #E2E8F0;
-            --gray-200: #F1F5F9;
-            --gray-100: #F8FAFC;
+            --gray-900: #111827;
+            --gray-800: #1F2937;
+            --gray-700: #374151;
+            --gray-600: #4B5563;
+            --gray-500: #6B7280;
+            --gray-400: #9CA3AF;
+            --gray-300: #D1D5DB;
+            --gray-200: #E2E8F0;
+            --gray-100: #F3F7FD;
             --white: #FFFFFF;
             
             /* Gradientes */
-            --gradient-primary: linear-gradient(135deg, #0066FF 0%, #00C6FF 100%);
-            --gradient-accent: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%);
-            --gradient-dark: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
-            --gradient-success: linear-gradient(135deg, #10B981 0%, #34D399 100%);
+            --gradient-primary: linear-gradient(135deg, #0B4E8C 0%, #00C2FF 100%);
+            --gradient-accent: linear-gradient(135deg, #00C2FF 0%, #0B4E8C 100%);
+            --gradient-dark: linear-gradient(135deg, #020617 0%, #0F172A 100%);
+            --gradient-success: linear-gradient(135deg, #12A96B 0%, #34D399 100%);
             
             /* Sombras */
             --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
@@ -235,9 +271,9 @@
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            color: var(--gray-800);
-            background-color: var(--white);
-            line-height: 1.625;
+            color: var(--gray-900);
+            background-color: #F7F9FC;
+            line-height: 1.6;
             overflow-x: hidden;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
@@ -296,12 +332,12 @@
         }
 
         .section {
-            padding: var(--space-20) 0;
+            padding: var(--space-16) 0;
             position: relative;
         }
 
         .section-sm {
-            padding: var(--space-12) 0;
+            padding: var(--space-10) 0;
         }
 
         .section-lg {
@@ -317,23 +353,44 @@
             left: 0;
             right: 0;
             z-index: 1030;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+            background: transparent;
+            border-bottom: none;
             transition: all var(--transition-base);
         }
 
         .header.scrolled {
             box-shadow: var(--shadow-md);
-            background: rgba(255, 255, 255, 0.98);
+            background: rgba(255, 255, 255, 0.96);
+            border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+        }
+
+        .header.scrolled .navbar-brand {
+            color: var(--dark) !important;
+        }
+
+        .header.scrolled .nav-link {
+            color: var(--gray-900) !important;
+        }
+
+        .header.scrolled .nav-link:hover,
+        .header.scrolled .nav-link.active {
+            color: var(--dark) !important;
+            background: rgba(0, 102, 255, 0.08);
+        }
+
+        .header.scrolled .navbar-toggler {
+            border-color: rgba(15, 23, 42, 0.15);
+        }
+
+        .header.scrolled .navbar-toggler-icon {
+            filter: none;
         }
 
         .ticker-section {
-            background: var(--gradient-dark);
-            color: var(--white);
-            padding: var(--space-2) 0;
-            font-size: 0.875rem;
+            background: transparent;
+            color: rgba(255, 255, 255, 0.85);
+            padding: 0.75rem 0;
+            font-size: 0.88rem;
             font-weight: 500;
             position: relative;
             overflow: hidden;
@@ -352,9 +409,11 @@
 
         .navbar-brand {
             font-family: 'Outfit', sans-serif;
-            font-weight: 900;
-            font-size: 1.75rem;
+            font-weight: 800;
+            font-size: 1.45rem;
             color: var(--dark) !important;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
         }
 
         .navbar-brand span:first-child {
@@ -371,10 +430,10 @@
         }
 
         .nav-link {
-            font-weight: 500;
+            font-weight: 600;
             color: var(--gray-700) !important;
             padding: var(--space-2) var(--space-3) !important;
-            border-radius: var(--radius-md);
+            border-radius: var(--radius-lg);
             transition: all var(--transition-fast);
             position: relative;
         }
@@ -382,7 +441,7 @@
         .nav-link:hover,
         .nav-link.active {
             color: var(--primary) !important;
-            background: rgba(0, 102, 255, 0.05);
+            background: rgba(11, 78, 140, 0.08);
         }
 
         .nav-link.active::after {
@@ -395,6 +454,14 @@
             height: 0.25rem;
             background: var(--primary);
             border-radius: var(--radius-full);
+        }
+
+        .navbar-toggler {
+            border-color: rgba(255, 255, 255, 0.35);
+        }
+
+        .navbar-toggler-icon {
+            filter: invert(1) brightness(1.4);
         }
 
         /* Botões */
@@ -415,15 +482,16 @@
         }
 
         .btn-primary {
-            background: var(--gradient-primary);
+            background: var(--primary);
             color: var(--white);
             border: none;
-            box-shadow: var(--shadow-lg);
+            box-shadow: var(--shadow-md);
         }
 
         .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: var(--shadow-xl);
+            box-shadow: var(--shadow-lg);
+            background: var(--accent);
         }
 
         .btn-primary:active {
@@ -458,8 +526,8 @@
         }
 
         .carousel-item {
-            height: 85vh;
-            min-height: 600px;
+            height: 86vh;
+            min-height: 640px;
             background-size: cover;
             background-position: center;
             position: relative;
@@ -472,47 +540,328 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(90deg, 
-                rgba(0, 0, 0, 0.8) 0%, 
-                rgba(0, 0, 0, 0.4) 50%, 
-                rgba(0, 0, 0, 0.2) 100%);
+            background: linear-gradient(180deg, rgba(4, 20, 42, 0.72) 0%, rgba(4, 20, 42, 0.32) 32%, rgba(4, 20, 42, 0.14) 100%);
         }
 
         .carousel-caption {
             position: absolute;
-            top: 50%;
-            left: 10%;
-            right: 10%;
-            transform: translateY(-50%);
+            top: 45%;
+            left: 5%;
+            max-width: 42rem;
+            transform: translateY(-45%);
             text-align: left;
+            width: min(100%, 42rem);
             z-index: 2;
         }
 
         .carousel-caption .badge {
-            font-size: 0.875rem;
-            font-weight: 600;
-            padding: var(--space-2) var(--space-4);
+            font-size: 0.85rem;
+            font-weight: 700;
+            padding: 0.85rem 1rem;
             border-radius: var(--radius-full);
             margin-bottom: var(--space-4);
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            background: rgba(255, 255, 255, 0.16);
+            color: var(--white);
+            border: 1px solid rgba(255,255,255,0.18);
         }
 
+        .carousel-caption h1,
         .carousel-caption h2 {
-            font-size: 3.5rem;
+            font-size: 4.25rem;
             font-weight: 800;
-            line-height: 1.1;
+            line-height: 1.05;
             margin-bottom: var(--space-4);
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            text-shadow: 0 24px 60px rgba(0, 0, 0, 0.22);
             color: var(--white);
         }
 
         .carousel-caption .lead {
-            font-size: 1.25rem;
-            color: rgba(255, 255, 255, 0.9);
-            margin-bottom: var(--space-6);
-            max-width: 36rem;
+            font-size: 1.15rem;
+            color: rgba(255, 255, 255, 0.88);
+            margin-bottom: var(--space-5);
+            max-width: 34rem;
+        }
+
+        .hero-labels {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-bottom: var(--space-4);
+        }
+
+        .hero-labels span {
+            background: rgba(255, 255, 255, 0.12);
+            color: rgba(255, 255, 255, 0.88);
+            padding: 0.6rem 1rem;
+            border-radius: 999px;
+            font-size: 0.9rem;
+            border: 1px solid rgba(255, 255, 255, 0.16);
+        }
+
+        .hero-cta-grid {
+            margin-top: var(--space-6);
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1rem;
+        }
+
+        .hero-cta-card {
+            background: rgba(255, 255, 255, 0.12);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: var(--radius-2xl);
+            padding: 1.25rem;
+            color: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(10px);
+        }
+
+        .hero-cta-card h6 {
+            font-size: 0.95rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .hero-panel {
+            background: rgba(255, 255, 255, 0.09);
+            border: 1px solid rgba(255, 255, 255, 0.16);
+            box-shadow: 0 24px 60px rgba(0, 0, 0, 0.16);
+            border-radius: var(--radius-2xl);
+            padding: 1.3rem;
+            margin-bottom: var(--space-5);
+            backdrop-filter: blur(18px);
+            position: relative;
+            overflow: hidden;
+            max-width: 100%;
+            width: min(100%, 36rem);
+        }
+
+        .hero-panel::before {
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: rgba(0, 194, 255, 0.14);
+            top: -70px;
+            right: -60px;
+            filter: blur(40px);
+            pointer-events: none;
+        }
+
+        .hero-panel::after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.22);
+            bottom: -20px;
+            left: -20px;
+            filter: blur(20px);
+            pointer-events: none;
+        }
+
+        .hero-panel small {
+            display: inline-block;
+            color: rgba(255, 255, 255, 0.82);
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            font-size: 0.82rem;
+        }
+
+        .hero-panel .row {
+            margin: 0 -0.5rem;
+        }
+
+        .hero-panel .col-6 {
+            padding: 0 0.5rem;
+        }
+
+        .hero-panel .col-6 strong {
+            display: block;
+            font-size: 1.05rem;
+        }
+
+        .hero-panel .col-6 p {
+            margin-bottom: 0;
+        }
+
+        .hero-panel .col-6 p {
+            margin-bottom: 0;
+        }
+
+        .hero-shapes {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .hero-shape {
+            position: absolute;
+            border-radius: 999px;
+            opacity: 0.35;
+            filter: blur(28px);
+        }
+
+        .hero-shape-1 {
+            width: 180px;
+            height: 180px;
+            top: 12%;
+            right: 8%;
+            background: rgba(0, 183, 255, 0.22);
+        }
+
+        .hero-shape-2 {
+            width: 120px;
+            height: 120px;
+            bottom: 18%;
+            left: 12%;
+            background: rgba(255, 255, 255, 0.18);
+        }
+
+        .hero-shape-3 {
+            width: 260px;
+            height: 260px;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(10, 78, 216, 0.12);
+        }
+
+        .hero-topline {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: rgba(255, 255, 255, 0.78);
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            margin-bottom: var(--space-4);
+        }
+
+        .hero-topline::before {
+            content: '';
+            width: 38px;
+            height: 2px;
+            background: var(--white);
+            opacity: 0.8;
+        }
+
+        .section-portal {
+            background: linear-gradient(180deg, #F6F9FF 0%, #EBF3FF 100%);
+            padding: var(--space-16) 0;
+        }
+
+        .section-portal .section-title {
+            margin-bottom: var(--space-8);
+        }
+
+        .portal-card {
+            background: rgba(255, 255, 255, 0.96);
+            border: 1px solid rgba(12, 45, 95, 0.08);
+            border-radius: var(--radius-2xl);
+            padding: var(--space-6);
+            box-shadow: 0 24px 60px rgba(12, 45, 95, 0.08);
+            transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+            min-height: 17rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .portal-card::before {
+            content: '';
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: rgba(0, 212, 255, 0.1);
+            pointer-events: none;
+        }
+
+        .portal-card:hover {
+            transform: translateY(-0.5rem);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .portal-card .badge {
+            background: transparent;
+            color: var(--primary);
+            font-size: 0.8rem;
+            padding: 0.55rem 0.85rem;
+            border-radius: 999px;
+            border: 1px solid rgba(11, 78, 140, 0.15);
+        }
+
+        .portal-card h4 {
+            margin-top: var(--space-4);
+            margin-bottom: var(--space-4);
+        }
+
+        .portal-card p {
+            color: var(--gray-600);
+        }
+
+        .news-card {
+            background: var(--white);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            border-radius: var(--radius-2xl);
+            padding: var(--space-6);
+            box-shadow: var(--shadow-xs);
+            transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+            min-height: 18rem;
+        }
+
+        .news-card:hover {
+            transform: translateY(-0.25rem);
+            box-shadow: var(--shadow-md);
+        }
+
+        .news-card h5 {
+            margin-bottom: var(--space-3);
+            color: var(--dark);
+        }
+
+        .news-card .news-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: var(--space-3);
+        }
+
+        .news-card p {
+            color: var(--gray-700);
+            margin-bottom: var(--space-4);
+        }
+
+        .news-card .news-date {
+            font-size: 0.85rem;
+            color: var(--gray-500);
+            letter-spacing: 0.04em;
         }
 
         @media (max-width: 992px) {
+            .hero-cta-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .section-portal {
+                padding: var(--space-12) 0;
+            }
+
+            .portal-card {
+                min-height: auto;
+            }
+        }
+
+        @media (max-width: 768px) {
             .carousel-item {
                 height: 70vh;
                 min-height: 500px;
@@ -545,34 +894,39 @@
 
         /* Web Section */
         .web-section {
-            background: var(--dark);
-            color: var(--white);
+            background: #F8FBFF;
+            color: var(--dark);
             position: relative;
             overflow: hidden;
+            border-radius: 2rem;
+            box-shadow: var(--shadow-lg);
+            padding: var(--space-16) 0;
         }
 
         .web-section::before {
             content: '';
             position: absolute;
-            top: -50%;
-            left: -50%;
-            right: -50%;
-            bottom: -50%;
-            background: 
-                radial-gradient(circle at 20% 80%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(236, 72, 153, 0.1) 0%, transparent 50%);
-            z-index: 1;
+            top: -30%;
+            left: -10%;
+            width: 300px;
+            height: 300px;
+            background: rgba(0, 102, 255, 0.08);
+            border-radius: 50%;
+            z-index: 0;
         }
 
         .web-badge {
             display: inline-block;
-            background: var(--accent);
-            color: var(--white);
-            padding: var(--space-2) var(--space-4);
+            background: rgba(0, 102, 255, 0.08);
+            color: var(--primary);
+            padding: 0.85rem 1.1rem;
             border-radius: var(--radius-full);
-            font-weight: 600;
-            font-size: 0.875rem;
+            font-weight: 700;
+            font-size: 0.85rem;
             margin-bottom: var(--space-4);
+            letter-spacing: 0.03em;
+            position: relative;
+            z-index: 1;
         }
 
         .web-preview {
@@ -702,7 +1056,54 @@
         }
 
         .animate-in {
+            opacity: 0;
             animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .feature-pill {
+            background: rgba(255, 255, 255, 0.95);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            border-radius: 1.5rem;
+            padding: 1.5rem;
+            min-height: 14rem;
+            transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+        }
+
+        .feature-pill:hover {
+            transform: translateY(-0.5rem);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .faq-accordion .accordion-button {
+            font-weight: 600;
+            color: var(--dark);
+        }
+
+        .faq-accordion .accordion-body {
+            color: var(--gray-700);
+            font-size: 0.96rem;
+        }
+
+        .testimonial-card {
+            background: var(--white);
+            border: 1px solid var(--gray-200);
+            border-radius: var(--radius-2xl);
+            padding: 2rem;
+            box-shadow: var(--shadow-md);
+            transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-0.5rem);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .section-divider {
+            height: 6px;
+            width: 100px;
+            background: var(--gradient-primary);
+            border-radius: 999px;
+            margin: 1rem auto 2rem;
         }
 
         /* Utilities */
@@ -720,11 +1121,20 @@
 
         /* Responsividade adicional */
         @media (max-width: 768px) {
+            .carousel-caption {
+                left: 5%;
+                right: 5%;
+            }
+
             .carousel-caption .btn {
                 width: 100%;
                 justify-content: center;
             }
             
+            .hero-cta-grid {
+                grid-template-columns: 1fr;
+            }
+
             .section {
                 padding: var(--space-12) 0;
             }
@@ -797,7 +1207,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#servicos">Serviços</a>
+                            <a class="nav-link" href="#servicos">Soluções</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contato">Contato</a>
@@ -820,11 +1230,62 @@
                 <div class="carousel-inner">
                     <!-- Slide 1: Suporte Técnico -->
                     <div class="carousel-item active" style="background-image: url('hero-multitech-1.png');">
+                        <div class="hero-shapes">
+                            <span class="hero-shape hero-shape-1"></span>
+                            <span class="hero-shape hero-shape-2"></span>
+                            <span class="hero-shape hero-shape-3"></span>
+                        </div>
                         <div class="carousel-caption">
-                            <span class="badge bg-primary mb-3">SUPORTE TÉCNICO ESPECIALIZADO</span>
-                            <h1 class="animate-in">Seu Computador <br><span class="text-gradient-primary">Funcionando Perfeitamente</span> em Aracaju</h1>
-                            <p class="lead animate-in">Especialistas em manutenção de PCs e Notebooks em Aracaju-SE. Diagnóstico preciso, reparo rápido e garantia de serviço.</p>
-                            <a href="#servicos" class="btn btn-primary btn-lg animate-in">Conhecer Nossos Serviços</a>
+                            <span class="badge bg-primary mb-3">INFRAESTRUTURA & SUPORTE</span>
+                            <div class="hero-topline animate-in">Arquitetura de rede corporativa com operação local em Aracaju</div>
+                            <h1 class="animate-in">Controlamos sua infraestrutura com <br><span class="text-gradient-primary">performance segura</span></h1>
+                            <div class="hero-panel animate-in">
+                                <small>Gestão, roteamento e segurança com suporte local 24/7</small>
+                                <div class="row g-3 mt-3">
+                                    <div class="col-6 col-md-3">
+                                        <strong>+10 anos</strong>
+                                        <p class="mb-0 text-white-75" style="font-size:0.95rem;">TI local</p>
+                                    </div>
+                                    <div class="col-6 col-md-3">
+                                        <strong>100%</strong>
+                                        <p class="mb-0 text-white-75" style="font-size:0.95rem;">Disponível</p>
+                                    </div>
+                                    <div class="col-6 col-md-3">
+                                        <strong>24h</strong>
+                                        <p class="mb-0 text-white-75" style="font-size:0.95rem;">Respostas rápidas</p>
+                                    </div>
+                                    <div class="col-6 col-md-3">
+                                        <strong>Local</strong>
+                                        <p class="mb-0 text-white-75" style="font-size:0.95rem;">Aracaju-SE</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hero-labels animate-in">
+                                <span>Roteamento inteligente</span>
+                                <span>Firewall & VPN</span>
+                                <span>Wi-Fi empresarial</span>
+                            </div>
+                            <p class="lead animate-in">Operamos sua rede com monitoramento proativo, manutenção preventiva e respostas imediatas para empresas e provedores em Aracaju.</p>
+                            <p class="small text-white-75 mb-4 animate-in">Atendimento ágil em Aracaju, São Cristóvão, Barra dos Coqueiros e toda região metropolitana.</p>
+                            <div class="hero-cta-grid animate-in">
+                                <div class="hero-cta-card">
+                                    <h6>Rápido diagnóstico</h6>
+                                    <p>Verificação imediata de falhas em computadores, redes e infraestrutura.</p>
+                                </div>
+                                <div class="hero-cta-card">
+                                    <h6>Redes robustas</h6>
+                                    <p>Instalação de Wi-Fi profissional e cabeamento para operações estáveis.</p>
+                                </div>
+                                <div class="hero-cta-card">
+                                    <h6>Sites performáticos</h6>
+                                    <p>Páginas otimizadas para aparecer no Google e converter mais clientes locais.</p>
+                                </div>
+                                <div class="hero-cta-card">
+                                    <h6>Segurança inteligente</h6>
+                                    <p>Monitoramento 24/7 com CFTV e proteção para seu ambiente digital.</p>
+                                </div>
+                            </div>
+                            <a href="#servicos" class="btn btn-primary btn-lg animate-in">Ver soluções</a>
                         </div>
                     </div>
                     
@@ -857,6 +1318,49 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Próximo</span>
                 </button>
+            </div>
+        </section>
+
+        <!-- Categorias de Serviço -->
+        <section id="portal" class="section section-portal">
+            <div class="container">
+                <div class="row align-items-center mb-6">
+                    <div class="col-lg-8">
+                        <span class="badge bg-primary text-uppercase mb-3">Portal de Soluções</span>
+                        <h2 class="display-5 fw-bold section-title">Painel de serviços para redes, segurança e digital</h2>
+                        <p class="lead text-muted">Produtos e operações técnicas que combinam roteamento, proteção, conectividade e presença digital para empresas locais.</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <article class="portal-card animate-in">
+                            <span class="badge">Routing</span>
+                            <h4>Roteamento Corporativo</h4>
+                            <p>Soluções de rede com alta disponibilidade, roteadores profissionais e arquitetura adaptada ao seu ambiente.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <article class="portal-card animate-in">
+                            <span class="badge">Firewall</span>
+                            <h4>Segurança & VPN</h4>
+                            <p>Implementação de firewalls, VPNs seguras e políticas que protegem a operação da sua empresa.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <article class="portal-card animate-in">
+                            <span class="badge">Operação</span>
+                            <h4>Suporte Técnico Local</h4>
+                            <p>Atendimento ágil, manutenção preventiva e administração de infraestrutura para Aracaju e região.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <article class="portal-card animate-in">
+                            <span class="badge">Web</span>
+                            <h4>Presença Digital</h4>
+                            <p>Sites e landing pages otimizadas para visibilidade local e geração de contatos qualificados.</p>
+                        </article>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -1058,9 +1562,9 @@
         <section id="servicos" class="section">
             <div class="container">
                 <div class="text-center mb-6">
-                    <h2 class="fw-bold display-5 mb-3">Nossas <span class="text-gradient-primary">Especialidades</span></h2>
+                    <h2 class="fw-bold display-5 mb-3">Nossas <span class="text-gradient-primary">Soluções Técnicas</span></h2>
                     <p class="lead text-muted mx-auto" style="max-width: 700px;">
-                        Tudo o que você precisa em tecnologia, de manutenção básica à presença digital completa.
+                        Tudo o que você precisa em tecnologia, de infraestrutura de rede a presença digital com desempenho garantido.
                     </p>
                 </div>
                 
@@ -1213,6 +1717,149 @@
                                 </li>
                             </ul>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Diferenciais Locais -->
+        <section id="diferenciais" class="section bg-light">
+            <div class="container">
+                <div class="text-center mb-6">
+                    <span class="d-inline-block py-2 px-4 rounded-pill text-white" style="background: linear-gradient(135deg, #0066FF, #00C6FF); font-weight: 700;">DIFERENCIAL LOCAL</span>
+                    <h2 class="fw-bold display-5 mt-4 mb-3">A melhor opção de TI em Aracaju</h2>
+                    <div class="section-divider"></div>
+                    <p class="lead text-muted mx-auto" style="max-width: 760px;">
+                        Competimos com as grandes empresas de tecnologia da informação e provedores locais, oferecendo atendimento 100% em Aracaju, suporte residencial, redes corporativas e sites otimizados para buscas orgânicas em Sergipe.
+                    </p>
+                </div>
+                <div class="row g-4 mb-5">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="feature-pill animate-in">
+                            <h5 class="fw-bold mb-3">Atendimento Local</h5>
+                            <p class="small text-muted mb-0">Atuação direta em Aracaju, São Cristóvão, Barra dos Coqueiros e bairros próximos sem terceirização.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="feature-pill animate-in">
+                            <h5 class="fw-bold mb-3">Suporte Residencial e Empresarial</h5>
+                            <p class="small text-muted mb-0">Atendemos notebooks, computadores, redes, CFTV e infraestrutura para empresas de todos os portes.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="feature-pill animate-in">
+                            <h5 class="fw-bold mb-3">SEO para Aracaju</h5>
+                            <p class="small text-muted mb-0">Sites prontos para rankear em buscas locais, com foco em palavras-chave de Aracaju e Sergipe.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="feature-pill animate-in">
+                            <h5 class="fw-bold mb-3">Entrega Rápida</h5>
+                            <p class="small text-muted mb-0">Diagnóstico em até 1 hora e agendamento rápido para empresas que não podem parar.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-4 align-items-start">
+                    <div class="col-lg-6">
+                        <div class="testimonial-card animate-in">
+                            <h3 class="fw-bold mb-3">Por que escolher a Multitech Field?</h3>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-3 d-flex align-items-start">
+                                    <i class="bi bi-check2-circle text-primary fs-4 me-3"></i>
+                                    <div><strong>Foco em Aracaju e região</strong> — diferente de soluções remotas, atendemos sua empresa ou residência localmente.</div>
+                                </li>
+                                <li class="mb-3 d-flex align-items-start">
+                                    <i class="bi bi-check2-circle text-primary fs-4 me-3"></i>
+                                    <div><strong>Experiência em TI, redes e web</strong> — suporte técnico, correção de computadores e criação de sites em um só lugar.</div>
+                                </li>
+                                <li class="mb-3 d-flex align-items-start">
+                                    <i class="bi bi-check2-circle text-primary fs-4 me-3"></i>
+                                    <div><strong>Comparável a grandes nomes</strong> — entregamos qualidade local ao lado de empresas como Jetsales, SpeedTelecom e FortNet.</div>
+                                </li>
+                                <li class="d-flex align-items-start">
+                                    <i class="bi bi-check2-circle text-primary fs-4 me-3"></i>
+                                    <div><strong>Comunicação simples</strong> — orçamento transparente, atendimento humanizado e prazo cumprido.</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="accordion accordion-flush faq-accordion animate-in" id="faqAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faqHeading1">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="false" aria-controls="faqCollapse1">
+                                        Como agendar uma visita técnica em Aracaju?
+                                    </button>
+                                </h2>
+                                <div id="faqCollapse1" class="accordion-collapse collapse" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Clique no botão de WhatsApp, informe seu endereço em Aracaju e descreva o problema. Nossa equipe retorna rapidamente com disponibilidade.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faqHeading2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                                        Vocês fazem criação de sites para empresas locais?
+                                    </button>
+                                </h2>
+                                <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Sim. Desenvolvemos sites, landing pages e lojas virtuais com foco em conversão e SEO local para empresas de Aracaju e Sergipe.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faqHeading3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                                        Atendem problemas de rede e CFTV para empresas?
+                                    </button>
+                                </h2>
+                                <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Sim. Instalamos redes robustas, cabeamento estruturado e sistemas de CFTV com suporte técnico contínuo para sua empresa.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech News -->
+        <section id="news" class="section bg-light">
+            <div class="container">
+                <div class="text-center mb-6">
+                    <span class="badge bg-primary text-uppercase mb-3">Atualizações</span>
+                    <h2 class="display-5 fw-bold mb-3">Novidades em tecnologia e infraestrutura</h2>
+                    <p class="lead text-muted mx-auto" style="max-width: 730px;">Principais notícias, dicas de rede e as últimas soluções de suporte para quem busca resultados reais em Aracaju.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <article class="news-card animate-in">
+                            <div class="news-badge">LANÇAMENTO</div>
+                            <h5>Wi-Fi corporativo com desempenho reforçado</h5>
+                            <p>Especialistas em Aracaju estão modernizando redes empresariais com soluções de alta capacidade e estabilidade.</p>
+                            <div class="news-date">Maio 2026 • Redes</div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <article class="news-card animate-in">
+                            <div class="news-badge">DICA</div>
+                            <h5>Como proteger seu escritório contra invasões</h5>
+                            <p>Veja as principais práticas para manter seu ambiente de TI seguro com CFTV, firewall e monitoramento ativo.</p>
+                            <div class="news-date">Abril 2026 • Segurança</div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <article class="news-card animate-in">
+                            <div class="news-badge">CASE</div>
+                            <h5>Redução de falhas com suporte técnico local</h5>
+                            <p>Conheça um case em que o suporte em Aracaju diminuiu o tempo de parada de uma empresa em 70%.</p>
+                            <div class="news-date">Março 2026 • Suporte</div>
+                        </article>
                     </div>
                 </div>
             </div>
